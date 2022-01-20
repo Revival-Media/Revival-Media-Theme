@@ -10,6 +10,23 @@
     font-weight: bold;
 }
 
+/* break points */
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xx: 1400px;
+
+
+/* colours */
+
+$pink: #ED1F78;
+$purple: #7B00DB;
+$grey: #161616;
+$white: #FFFFFF;
+
+
 * {
     margin: 0;
     padding: 0;
