@@ -1,0 +1,24 @@
+@use "../../abstracts/variables";
+
+a {
+	color: variables.$color__link;
+
+	&:visited {
+		color: variables.$color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: variables.$color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

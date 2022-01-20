@@ -1,0 +1,35 @@
+/*
+Theme Name: esqueleto
+
+WooCommerce styles override
+*/
+
+/**
+ * Shop tables
+ */
+@use "plugins/woocommerce/tables";
+
+/**
+ * Products
+ */
+@use "plugins/woocommerce/products";
+
+/**
+ * Single product
+ */
+@import "plugins/woocommerce/single-product";
+
+/**
+ * Checkout
+ */
+@import "plugins/woocommerce/checkout";
+
+/**
+ * General WooCommerce components
+ */
+@import "plugins/woocommerce/components";
+
+/**
+ * WooCommerce widgets
+ */
+@import "plugins/woocommerce/widgets";
