@@ -1,3 +1,9 @@
+/*--------------------------------------------------------------
+# Universal Styles
+--------------------------------------------------------------*/
+
+@use "universal.scss";
+
 @use "theme-header";
 
 // Import variables and mixins.
@@ -41,19 +47,3 @@
 --------------------------------------------------------------*/
 
 @use "utilities";
-
-/*--------------------------------------------------------------
-# Typefaces
---------------------------------------------------------------*/
-
-@font-face {
-    font-family: Mont;
-    src: url(./assets/fonts/Mont-Regular.otf);
-    font-weight: regular;
-}
-
-@font-face {
-    font-family: Mont;
-    src: url(./assets/fonts/Mont-Bold.otf);
-    font-weight: bold;
-}
