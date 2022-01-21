@@ -1,3 +1,49 @@
+.header-wrap {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: $trans;
+    backdrop-filter: blur(8px);
+    .header-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+            padding-bottom: 0px;
+        }
+        .rm-logo-wrap {
+            font-size: 0rem;
+
+            .rm-logo {
+                width: 150px;
+                font-size: 0px;
+            }
+        }
+        
+        nav {
+            li {
+                padding-right: 20px;
+            }
+
+            li:last-child {
+                padding-right: 0px;
+            }
+        }
+    }
+    .colour-bar {
+        background-image: url(assets/imgs/colour-bar.png);
+        background-size: cover;
+        height: 4px;
+    }
+}
+
+#primary-menu {
+    display: none;
+}
+
 @media screen and (min-width: $sm) {
     .menu-toggle {
         display: none !important;
