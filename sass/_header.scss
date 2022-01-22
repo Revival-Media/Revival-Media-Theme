@@ -1,16 +1,32 @@
+/* Top bar and spacer element height */
+#masthead {
+    width: 100%;
+    height: 85px;
+}
+#masthead .site-width.header-container {
+    max-height: 85px;
+}
+
+/* Desktop styles */
 .header-wrap {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background: $trans;
-    backdrop-filter: blur(8px);
     .header-container {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .menu-toggle {
+            position: relative;
+            border: none;
+            background: none;
+            svg {
+                fill: #FFF;
+            }
+        }
         a {
             padding-bottom: 0px;
         }
@@ -22,29 +38,101 @@
                 font-size: 0px;
             }
         }
-        
         nav {
             li {
-                padding-right: 20px;
+                margin-top: .3rem;
+                padding-right: 4rem;
+                font-weight: bold;
             }
-
             li:last-child {
-                padding-right: 0px;
+                padding-right: 0;
+            }
+            .current-menu-item a {
+                color: $pink;
+            }
+            a {
+                color: $white;
+                transition: color 150ms ease, top 150ms ease;
+                padding-bottom: 0;
+            }
+            a:hover {
+                color: $pink;
             }
         }
+    }   
+}
+
+/* Removes glass background blur and background-color from desktop menu */
+.main-navigation:not(.toggled) #primary-menu {
+        background-color: transparent;
+        backdrop-filter: blur(0);
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: $md) {
+    .main-navigation #primary-menu {
+        top: 90px;
+        right: -100%;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity 150ms ease, right 1ms ease 1000ms;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 145px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: -1;
+        li {
+            padding: 2rem 0;
+            a {
+                font-size: 4.5rem;
+                position: relative;
+                top: 0;
+            }
+        }
+        li:hover a {
+            top: -5px;
+            color: $pink;
+        }
     }
-    .colour-bar {
-        background-image: url(assets/imgs/colour-bar.png);
-        background-size: cover;
-        height: 4px;
+
+}
+.burger-icon {
+    opacity: 1;
+    transition: opacity 150ms ease-in, top 150ms ease-out;
+    top: 0px;
+    right: -46px;
+    position: relative;
+}
+.burger-close-icon {
+    opacity: 0;
+    transition: opacity 150ms ease-in, top 150ms ease-out;
+    margin-right: .2rem;
+    top: -25px;
+    position: relative;
+}
+.main-navigation.toggled {
+    .burger-icon {
+        opacity: 0 !important;
+        top: -25px;
+    }
+    .burger-close-icon {
+        opacity: 1;
+        margin-right: .2rem;
+        top: 0;
     }
 }
 
-#primary-menu {
-    display: none;
+.main-navigation.toggled #primary-menu {
+    opacity: 1;
+    right: 0;
+    transition: opacity 150ms ease;
 }
 
-@media screen and (min-width: $sm) {
+/* Controls mobile and desktop menu breakpoint */
+@media screen and (min-width: $md) {
     .menu-toggle {
         display: none !important;
     }
