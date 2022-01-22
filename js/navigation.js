@@ -5,7 +5,10 @@
  * navigation support for dropdown menus.
  */
 ( function() {
+
 	const siteNavigation = document.getElementById( 'site-navigation' );
+	const pageContent = document.getElementById( 'page-content' );
+	const colophon = document.getElementById( 'colophon' );
 
 	// Return early if the navigation don't exist.
 	if ( ! siteNavigation ) {
@@ -35,6 +38,10 @@
 	button.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
 
+		// Adds blur effect to rest of page each time button is clicked.
+		pageContent.classList.toggle( 'glass-blur' );
+		colophon.classList.toggle( 'glass-blur' );
+		
 		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
 			button.setAttribute( 'aria-expanded', 'false' );
 		} else {
@@ -48,6 +55,11 @@
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
+
+			// Removes blur effect to rest of page when the user clicks outside the navigation.
+			pageContent.classList.remove( 'glass-blur' );
+			colophon.classList.remove( 'glass-blur' );
+
 			button.setAttribute( 'aria-expanded', 'false' );
 		}
 	} );
