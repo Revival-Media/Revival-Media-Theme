@@ -1,4 +1,4 @@
-Esqueleto
+Revival Media
 ========
 
 Hi. I'm a WordPress starter theme called `Esqueleto`. I'm a theme meant for hacking so don't use me as a Parent Theme. 
@@ -27,7 +27,7 @@ use a Block Theme (e.g.
 [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks), 
 [Varia](https://github.com/Automattic/themes/tree/trunk/varia) and others), you can also learn about [block themes
 development](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) 
-(take a look at [Theme Experiments](https://github.com/WordPress/theme-experiments)). Esqueleto is a regular theme designed 
+(take a look at [Theme Experiments](https://github.com/WordPress/theme-experiments)). Revival Media is a regular theme designed 
 to be used by power users and developers who do have the need to create themes by directly working with php, javascript, 
 sass, css, node scripts and other advanced tools.** 
 
@@ -36,7 +36,7 @@ Installation
 
 ### Requirements
 
-`Esqueleto` requires the following dependencies:
+`Revival Media` requires the following dependencies:
 
 - [Node.js](https://nodejs.org/) (It is recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage node and npm 
 versions)
@@ -57,7 +57,7 @@ Enter the new theme directory:
 $ cd encarnado
 ```
 
-To start using all the tools that come with `Esqueleto`  you need to install the necessary Node.js and Composer 
+To start using all the tools that come with `Revival Media`  you need to install the necessary Node.js and Composer 
 dependencies :
 
 ```sh
@@ -95,19 +95,19 @@ This manual quick start is meant for he who doesn't want to run the startup scri
 Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll 
 need to do a six-step find and replace on the name in all the templates.
 
-1. Search for `'esqueleto'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `esqueleto_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: esqueleto` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;esqueleto</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `esqueleto-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `ESQUELETO_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+1. Search for `'Revival Media'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
+2. Search for `Revival Media_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
+3. Search for `Text Domain: Revival Media` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
+4. Search for <code>&nbsp;Revival Media</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
+5. Search for `Revival Media-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
+6. Search for `Revival Media_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
 
 Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename 
-`esqueleto.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+`Revival Media.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
 #### Setup
 
-To start using all the tools that come with `Esqueleto`  you need to install the necessary Node.js and Composer dependencies :
+To start using all the tools that come with `Revival Media`  you need to install the necessary Node.js and Composer dependencies :
 
 ```sh
 $ composer install
@@ -116,7 +116,7 @@ $ npm install
 
 ### Available CLI commands
 
-`Esqueleto` comes packed with CLI commands tailored for WordPress theme development :
+`Revival Media` comes packed with CLI commands tailored for WordPress theme development :
 
 - `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
 - `composer lint:php` : checks all PHP files for syntax errors.
@@ -133,7 +133,7 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 Good luck!
 
-### Esqueleto origin
+### Revival Media origin
 
 My name is [Fábio](https://github.com/fabio-blanco) and this is a modified version from the original 
 [underscores](https://github.com/Automattic/_s) that I've made for my personal use. Since I've discovered
