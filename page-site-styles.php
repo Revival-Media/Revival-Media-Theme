@@ -11,7 +11,8 @@
     <p>Lorem ipsum doller met.</p>
 
     <a class="rev-button">Test button</a>
-
+</section>
+<section class="site-width">
     <div class="rev-card">
         <h1>Test card title</h1>
         <p>Test card body text.</p>
