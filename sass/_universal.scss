@@ -1,33 +1,3 @@
-@font-face {
-    font-family: mont;
-    src: url(./assets/fonts/Mont-Regular.otf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: mont;
-    src: url(./assets/fonts/Mont-Bold.otf);
-    font-weight: bold;
-}
-
-/* break points */
-
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xx: 1400px;
-
-
-/* colours */
-
-$pink: #ED1F78;
-$purple: #7B00DB;
-$grey: #161616;
-$white: #FFFFFF;
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -36,17 +6,234 @@ $white: #FFFFFF;
 
 html {
     font-family: 'mont', sans-serif;
+    background-color: $grey;
+    color: $white;
+    font-size: 62.5%;
 }
 
-/* Type sizes */
+/* Site widths */
+.site-width {
+    max-width: $xx;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
-h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    @media (min-width: $md) {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 50px;
+/* Scroll disable utility class */
+
+@media screen and (min-width: $sm) {
+    .site-width {
+        padding: 2rem;
     }
+}
+
+@media screen and (min-width: $md) {
+    .site-width {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: $xx) {
+    .site-width {
+        padding: 5rem;
+    }
+}
+
+/* Font import */
+@font-face {
+    font-family: mont;
+    src: url(./assets/fonts/Mont-Regular.otf);
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: mont;
+    src: url(./assets/fonts/Mont-Bold.otf);
+    font-weight: bold;
+    font-display: swap;
+}
+/* Colour bar */
+.colour-bar {
+    background-image: url(assets/imgs/colour-bar.png);
+    background-size: cover;
+    height: 4px;
+}
+
+/* Glass background */
+.glass {
+    background: $trans;
+    backdrop-filter: blur(8px);
+}
+.glass-blur {
+    filter: blur(8px);
+}
+
+/* Type styles */
+a {
+    color: $pink;
+    cursor: pointer;
+}
+a:hover {
+    font-weight: bold;
+}
+p, a, label, input {
+    font-size: 1.6rem;
+}
+.small p,
+.small a {
+    font-size: 1.4rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+p, a {
+    padding-bottom: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+h4 {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+h5 {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+h6 {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+@media screen and (min-width: $md) {
+    h1 {
+        font-size: 5rem;
+        padding-bottom: 2.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+    h3 {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+    }
+    h6 {
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
+    }
+}
+.grad-text {
+    background: $grad;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+li {
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+}
+
+/* Button Styles */
+a.rev-button {
+    position: relative;
+    background: $purple;
+    color: $white;
+    z-index: 1;
+    padding: 1.1rem 2rem 0.8rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background 150ms ease;
+    text-align: center;
+}
+a.rev-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, transparent, $pink);
+    z-index: -1;
+    border-radius: 50px;
+}
+a.rev-button:hover {
+    background: $pink;
+}
+
+/* Card Styles */
+.rev-card {
+    background-color: $white;
+    padding: 3rem;
+    border-radius: $rev-radius;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: $grey;
+    }
+}
+@media screen and (min-width: $sm) {
+    .rev-card {
+        padding: 5rem;
+    }
+}
+
+/* Form Styles */
+@media screen and (min-width: $sm) {
+    form {
+        margin-bottom: 2rem !important;
+    }
+}
+form {
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: $sm) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+input, select {
+    display: block;
+}
+input:focus {
+    border: .2rem solid $pink !important;
+}
+label {
+    margin-bottom: .5rem;
+}
+.contact-form input {
+    border-radius: $rev-radius;
+    border: .2rem solid $grey;
+    padding: 1.5rem 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+select {
+    border-radius: $rev-radius;
+    border: .2rem solid $grey;
+    padding: 1.5rem 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: bold;
 }
