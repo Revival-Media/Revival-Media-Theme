@@ -1,0 +1,35 @@
+.services-hero-section { 
+    h1 {
+        padding-bottom: 2rem; 
+        max-width: 35ch;
+    }
+}
+.services-block {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .rev-card {
+        padding: 0;
+        overflow: hidden;
+    }
+    img.service-img {
+        object-position: center;
+        object-fit: cover;
+        min-width: 100%;
+        max-height: 30rem;
+    }
+    .service-text {
+        padding: 3rem;
+        .flex-wrap {
+            margin-bottom: 2rem;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: $md) {
+    .services-block {
+        grid-template-columns: 1fr;
+    }
+}
