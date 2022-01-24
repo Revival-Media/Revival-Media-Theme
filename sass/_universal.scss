@@ -15,21 +15,18 @@ html {
 .site-width {
     max-width: $xx;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
 }
-
 @media screen and (min-width: $md) {
     .site-width {
-        padding: 5rem 3rem;
+        padding: 7.5rem 3rem;
     }
 }
-
-@media screen and (min-width: $xx) {
+@media screen and (min-width: $lg) {
     .site-width {
-        padding: 5rem;
+        padding: 7.5rem 5rem;
     }
 }
-
 .site-width + .site-width {
     padding-top: 0;
 }
@@ -37,13 +34,13 @@ html {
 /* Font import */
 @font-face {
     font-family: mont;
-    src: url(./assets/fonts/Mont-Regular.otf);
+    src: url(./assets/fonts/mont-regular.woff2), url(./assets/fonts/mont-regular.woff);
     font-weight: normal;
     font-display: swap;
 }
 @font-face {
     font-family: mont;
-    src: url(./assets/fonts/Mont-Bold.otf);
+    src: url(./assets/fonts/mont-bold.woff2), url(./assets/fonts/mont-bold.woff);
     font-weight: bold;
     font-display: swap;
 }
@@ -68,10 +65,7 @@ a {
     color: $pink;
     cursor: pointer;
 }
-a:hover {
-    font-weight: bold;
-}
-p, a, label, input {
+p, a, label, input, li {
     font-size: 1.6rem;
 }
 .small p,
@@ -108,7 +102,6 @@ h6 {
     font-size: 1rem;
     padding-bottom: .5rem;
 }
-
 @media screen and (min-width: $xs) {
     h1 {
         font-size: 4rem;
@@ -161,11 +154,18 @@ h6 {
         padding-bottom: .5rem;
     }
 }
+
+/* Remove bottom padding if element is last child */
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, a:last-child {
+    padding-bottom: 0;
+}
+
 .grad-text {
     background: $grad;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 0.2rem 0;
 }
 li {
     list-style-type: none;
@@ -174,17 +174,33 @@ li a {
     text-decoration: none;
 }
 
+/* Custom bullet styles */
+li.rev-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 3rem;
+    margin-top: .5rem;
+}
+li.rev-bullet span {
+    font-size: 1.6rem;
+    margin-left: -2rem;
+    top: -0.1rem;
+    position: relative;
+}
+
 /* Button Styles */
 a.rev-button {
     position: relative;
     background: $purple;
     color: $white;
     z-index: 1;
-    padding: 1.1rem 2rem 0.8rem 2rem;
+    padding: 1.2rem 2rem 1.1rem 2rem;
     border-radius: 50px;
     display: inline-block;
     transition: background 150ms ease;
     text-align: center;
+    font-weight: bold;
 }
 a.rev-button::before {
     content: "";
@@ -207,7 +223,7 @@ a.rev-button:hover {
     padding: 3rem;
     border-radius: $rev-radius;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
-    h1, h2, h3, h4, h5, h6, p, label {
+    h1, h2, h3, h4, h5, h6, p, label, li {
         color: $grey;
     }
 }
@@ -218,13 +234,13 @@ a.rev-button:hover {
 }
 
 /* Form Styles */
+form {
+    margin-bottom: 1rem;
+}
 @media screen and (min-width: $sm) {
     form {
         margin-bottom: 2rem !important;
     }
-}
-form {
-    margin-bottom: 1rem;
 }
 @media screen and (min-width: $sm) {
     .contact-form {
@@ -234,7 +250,7 @@ form {
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2.5rem 1rem;
 }
 input, select {
     display: block;
@@ -259,4 +275,20 @@ select {
     margin-top: 1rem;
     width: 100%;
     font-weight: bold;
+}
+
+/* Layout styles */
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-wrap {
+    h1, h3, h4, h5, h6, p, label, input {
+        padding-bottom: 0;
+    }
+    .rev-button {
+        margin-top: 0;
+    }
 }
