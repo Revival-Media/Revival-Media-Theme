@@ -1,0 +1,115 @@
+.footer-wrap {
+    // margin-top: 50px; (Not sure this style is needed.)
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: $md) {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .footer-1 {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: $md) {
+                    flex-direction: row;
+                    width: 50%;
+                }
+                .footer-col-one {
+                    @media screen and (min-width: $md) {
+                        width: 50%;
+                    }
+                    img {
+                        padding-bottom: 2.5rem;
+                    }
+                    #primary-menu {
+                        flex-direction: column;
+                        li {
+                            padding-bottom: 0.5rem;
+                            a {
+                                color: $white;
+                                font-weight: bold;
+                                transition: color 150ms ease;
+                                &:hover {
+                                    color: $pink; 
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-col-two {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding: 2rem 0rem;
+                    @media screen and (min-width: $md) {
+                        padding: 0rem;
+                    }
+                    a {
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+
+            
+            .footer-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .footer-address {
+                    p:first-child {
+                        font-weight: bold !important;
+                        color: $pink;
+                        padding-bottom: 0rem;
+                    }
+                }
+                .footer-links {
+                    padding: 1rem 0rem;
+                    a:first-child {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+.contact-detail {
+    display: flex;
+    img {
+        padding-right: 1rem;
+    }
+    p {
+        padding: 0px;
+    }
+}
+
+.footer-container {
+    a {
+        font-weight: bold;
+        transition: color 150ms ease;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.social-links *:not(:first-child):not(:last-child) {
+    padding: 0rem 0.5rem;
+}
+
+.social-links {
+    img {
+        transition: color 150ms ease;
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(65%) saturate(6104%) hue-rotate(322deg) brightness(96%) contrast(93%);
+        }
+    }
+}
