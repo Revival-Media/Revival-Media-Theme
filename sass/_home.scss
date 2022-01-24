@@ -1,0 +1,89 @@
+/* Services section styles */
+.services-card {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    .flex-wrap {
+        margin-bottom: 4rem;
+    }
+    .services-wrap {
+        display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3rem 2rem;
+        .flex-wrap {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: $xx) {
+    .services-card {
+        .services-wrap {
+            grid-template-columns: 1fr 1fr;
+        }
+        .flex-wrap {
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media screen and (max-width: $sm) {
+    .services-card {
+        .services-wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* Card and text section styles */
+.card-text-section {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    align-items: center; 
+    gap: 7.5rem 5rem;
+    .image-text-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .rev-card {
+            min-height: 40rem;
+            min-width: 50%;
+            margin-right: 2rem;
+        }
+    }
+    .card-image-wrap {
+        margin-left: 2rem;
+    }
+    .card-switch {
+        .rev-card {
+            min-height: 40rem;
+            min-width: 50%;
+            margin-left: 2rem;
+            margin-right: 0;
+        }
+        .card-image-wrap {
+            margin-right: 2rem;
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width: $md) {
+    .card-text-section {
+        gap: 5rem;
+    }
+    .card-text-section .image-text-wrap {
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+        h3 {
+            margin-top: 2.5rem;
+        }
+        .card-image, .rev-card, .card-image-wrap {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .card-text-section .image-text-wrap.card-switch {
+        flex-direction: column-reverse;
+        .card-image-wrap {
+            text-align: left !important;
+        }
+    }
+}
