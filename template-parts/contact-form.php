@@ -1,6 +1,6 @@
 <section class="site-width">
-    <div class="rev-card contact-card" style="display: grid; grid-template-columns: auto 1fr; padding: 0; overflow: hidden;">
-        <div style="padding: 5rem;">
+    <div class="rev-card contact-card">
+        <div class="contact-card-text">
             <h3>Like the idea of working with us?</h3>
             <h1>Book an <span class="grad-text">intro call</span> today.</h1>
             <form class="contact-form contact-form-template" action="" style="margin-bottom: 0 !important;">
@@ -23,6 +23,6 @@
                 <a class="rev-button">Send</a>
             </form>
         </div>
-        <div style="background-color: pink;"></div>
+        <img class="contact-template-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/contact-template.jpg'; ?>" alt="An informal zoom meeting.">
     </div>
 </section>
