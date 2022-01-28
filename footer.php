@@ -67,10 +67,15 @@
 				
 			</div>
 		</div>
+		<div class="bottom-bar">
+			<div>
+				<img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">
+				<h4>Part of the Revival Solutions Group</h4>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
