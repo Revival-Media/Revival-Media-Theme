@@ -18,14 +18,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
@@ -42,14 +38,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
@@ -66,14 +58,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
@@ -90,14 +78,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
@@ -114,14 +98,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
@@ -138,14 +118,10 @@
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Innovative creative concepts</span></li>
                     <li class="rev-bullet"><span>Commercial goal-setting</span></li>
-                    <li class="rev-bullet"><span>Social and web strategy</span></li>
-                    <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </div>
             </ul>
         </div>
