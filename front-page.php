@@ -31,8 +31,10 @@
             $clientName = get_post_meta(get_the_ID(), 'Client', true);
             //Get Background Colour
             $background = get_post_meta(get_the_ID(), 'Background', true);
-            //Get textd Colour
+            //Get Text Colour
             $textcolor = get_post_meta(get_the_ID(), 'Text Colour', true);
+            //Get Descktop Screenshot Colour
+            $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
              
             // Display the Project Title and Client with Hyperlink
         ?>
@@ -52,7 +54,7 @@
                     <div class="yellow screen-ui-btn"></div>
                     <div class="green screen-ui-btn"></div>
                 </div>
-                <div class="screenshot"></div>
+                <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot"></div>
             </div>
         </div>
 

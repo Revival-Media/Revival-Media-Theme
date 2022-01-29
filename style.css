@@ -639,11 +639,14 @@ select {
   text-decoration: none;
 }
 
+.screen-wrap {
+  padding-top: 2.5rem;
+}
 .screen-wrap .screen-ui {
   display: flex;
   flex-direction: row;
   height: 2rem;
-  background-color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 0.5rem 0.5rem 0 0;
   align-items: center;
   padding-left: 0.8rem;
@@ -665,7 +668,6 @@ select {
 }
 .screen-wrap .screenshot {
   height: 300px;
-  background-image: url(assets/imgs/HEX-DT.png);
   background-size: cover;
 }
 
@@ -772,6 +774,33 @@ select {
   background-image: url(assets/imgs/social-media.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.about-hero-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "hero hero . pic-4 pic-4" "pic-1 . . pic-4 pic-4" "pic-1 pic-2 . pic-4 pic-4" "pic-1 pic-2 pic-3 pic-3 ." "pic-1 . pic-3 pic-3 .";
+}
+
+.about-hero {
+  grid-area: hero;
+}
+
+.about-pic-1 {
+  grid-area: pic-1;
+}
+
+.about-pic-2 {
+  grid-area: pic-2;
+}
+
+.about-pic-3 {
+  grid-area: pic-3;
+}
+
+.about-pic-4 {
+  grid-area: pic-4;
 }
 
 .services-hero-section h1 {

@@ -14,11 +14,12 @@
 
 
 .screen-wrap {
+    padding-top: 2.5rem;
     .screen-ui{
         display: flex;
         flex-direction: row;
         height: 2rem;
-        background-color: $white;
+        background: rgba(255, 255, 255, 0.85);
         border-radius: 0.5rem 0.5rem 0 0;
         align-items: center;
         padding-left: 0.8rem;
@@ -41,7 +42,6 @@
     }
     .screenshot {
         height: 300px;
-        background-image: url(assets/imgs/HEX-DT.png);
         background-size: cover;
     }
 }
