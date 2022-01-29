@@ -139,7 +139,7 @@ h6 {
         padding-bottom: .5rem;
     }
 }
-@media screen and (min-width: $md) {
+@media screen and (min-width: $lg) {
     h1 {
         font-size: 5rem;
         padding-bottom: 2.5rem;
@@ -210,8 +210,9 @@ a.rev-button {
     border-radius: 50px;
     display: inline-block;
     transition: background 150ms ease;
-    text-align: center;
+    width: fit-content;
     font-weight: bold;
+    text-decoration: none;
 }
 a.rev-button::before {
     content: "";
