@@ -1,3 +1,5 @@
+/* Hero card styles */
+
 .hero-card {
     min-width: 47.5%;
     max-width: 620px;
@@ -7,14 +9,9 @@
         text-decoration: none;
     }
 }
-.card-info-wrap {
-    
-}
-
-
-
 .screen-wrap {
     padding-top: 2.5rem;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
     .screen-ui{
         display: flex;
         flex-direction: row;
@@ -30,14 +27,14 @@
             border-radius: 1rem;
         }
         .red {
-            background-color: red;
+            background-color: #E9152E;
         }
         .yellow {
-            background-color: orange;
+            background-color: #F2C421;
             margin: 0 0.4rem;
         }
         .green {
-            background-color: green;
+            background-color: #22D73F;
         }
     }
     .screenshot {
@@ -145,6 +142,7 @@
 .hp-img-1 {
     background-image: url(assets/imgs/shopify-mock.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .hp-img-2 {
