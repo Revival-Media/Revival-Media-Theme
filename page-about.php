@@ -12,42 +12,6 @@
     .about-pic-4 {
         background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/about-pic-4.jpg'; ?>);
     }
-    .shopify-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/shopify.svg'; ?>);
-    }
-    .wordpress-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/wordpress.svg'; ?>);
-    }
-    .linux-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/linux.svg'; ?>);
-    }
-    .google-ads-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/google_ads.svg'; ?>);
-    }
-    .google-maps-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/google_maps.svg'; ?>);
-    }
-    .google-analytics-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/google_analytics.svg'; ?>);
-    }
-    .figma-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/figma.svg'; ?>);
-    }
-    .css-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/google_analytics.svg'; ?>);
-    }
-    .adobe-cc-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/adobe-cc.svg'; ?>);
-    }
-    .mailchimp-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/mailchimp.svg'; ?>);
-    }
-    .js-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/js.svg'; ?>);
-    }
-    .html-tool {
-        background-image: url(<?php echo get_template_directory_uri() . '/assets/imgs/html_5.svg'; ?>);
-    }
 </style>
 
 <?php get_header(); ?>
@@ -94,14 +58,26 @@
 </section>
 
 <!-- Our tools section. You can do this bit James 😛 -->
-<section class="site-width our-tools-wrap">
-    <div class="tool-tab google-maps-tool"></div>
-    <div class="rev-card our-tools-card">
-        <h1>Our tools 🛠️</h1>
-        <p>We use a suite of modern tools to help us do good work and stuff.</p>
-        <a href="<?php echo get_template_directory_uri() . '/work'; ?>" class="rev-button">View them in action</a>
+<section class="site-width">
+    <div class="tools-container">
+        
+        <div class="tools-top">
+            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-l-mob.png'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-r-mob.png'; ?>" alt="">
+        </div>
+        <img class="tools-left" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-left-dt.png'; ?>" alt="">
+        <div class="rev-card our-tools-card">
+            <h1>Our tools 🛠️</h1>
+            <p>We use a suite of modern tools to help us do good work and stuff.</p>
+            <a href="<?php echo get_template_directory_uri() . '/work'; ?>" class="rev-button">View them in action</a>
+        </div>
+        <div class="tools-bottom">
+            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-l-mob.png'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-r-mob.png'; ?>" alt="">
+        </div>
+        <img class="tools-right" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-right-dt.png'; ?>" alt="">
     </div>
-    <div class="tool-tab shopify-tool"></div>
+    
 </section>
 <!-- Revival Group promo section -->
 <section class="site-width rev-group-wrap">
