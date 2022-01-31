@@ -1,0 +1,328 @@
+/* About hero styles */
+.about-hero-wrap {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1.5fr 1fr 1fr .5fr;
+    grid-template-rows: 3rem auto 5rem auto 2rem auto 2rem;
+    grid-template-areas:"p-3 p-3 .   ."
+                        "p-3 p-3 p-4 p-4"
+                        ".   .   p-4 p-4"
+                        "hr  hr  hr  hr"
+                        "p-1 .   .   ."
+                        "p-1 p-2 p-2 p-2"
+                        ".   p-2 p-2 p-2";
+    .about-hero {
+        grid-area: hr;
+    }
+    .about-pic-1 {
+        grid-area: p-1;
+        margin-right: -6rem;
+        z-index: 1;
+        aspect-ratio: 1/1;
+        @supports not (aspect-ratio: auto) { // Fix for browser that don't support aspect-ratio
+            padding-top: 100%;
+            height: 0;
+            position: relative;
+            overflow: hidden;
+            
+          }
+    }
+    .about-pic-2 {
+        grid-area: p-2;
+    }
+    .about-pic-3 {
+        grid-area: p-3;
+        margin-right: -6rem;
+    }
+    .about-pic-4 {
+        grid-area: p-4;
+        aspect-ratio: 1/1;
+        @supports not (aspect-ratio: auto) { // Fix for browser that don't support aspect-ratio
+            padding-top: 100%;
+            height: 0;
+            position: relative;
+            overflow: hidden;
+            
+          }
+    }
+}
+.about-hero-wrap {
+    h1 {
+        z-index: 1;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        max-width: 23ch;
+    }
+    .about-pic {
+        border-radius: $rev-radius;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (min-width: $md) {
+    .about-hero-wrap {
+        grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+        grid-template-rows: 18rem 5rem 5rem 20rem 5rem;
+        grid-template-areas: "hr  hr  hr  .   ."
+                             "p-1 .   .   p-4 p-4"
+                             "p-1 p-2 .   p-4 p-4"
+                             "p-1 p-2 p-3 p-3 ."
+                             "p-1 .   p-3 p-3 .";
+        h1 {
+            position: relative;
+            top: 0;
+            min-width: 23ch;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .about-pic {
+            aspect-ratio: auto;
+        }
+        .about-pic-1 {
+            margin-right: 0;
+        }
+        .about-pic-3 {
+            margin-right: 0;
+        }
+        .about-pic-4 {
+            margin-bottom: -7rem;
+            margin-top: -3rem;
+            margin-left: -8rem;
+        }
+    }
+}
+@media screen and (min-width: $lg) {
+    .about-hero-wrap {
+        grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+        grid-template-rows: 25rem 5rem 5rem 20rem 5rem;
+        grid-template-areas: "hr  hr  hr  p-4 p-4"
+                             "p-1 .   .   p-4 p-4"
+                             "p-1 p-2 .   p-4 p-4"
+                             "p-1 p-2 p-3 p-3 ."
+                             "p-1 .   p-3 p-3 .";
+        h1 {
+            position: relative;
+            top: 2.5rem;
+            min-width: 23ch;
+            max-width: 24ch;
+        }
+        .about-pic-1 {
+            margin-right: 0;
+        }
+        .about-pic-3 {
+            margin-right: 0;
+        }
+        .about-pic-4 {
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+/* Meet the team styles */
+.rev-team-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nb"
+                         "hf"
+                         "jg"
+                         "an"
+                         "ju";
+    grid-gap: 1rem;
+    .team-card {
+        padding: 3rem;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        border-radius: $rev-radius;
+        aspect-ratio: 1/1;
+        @supports not (aspect-ratio: auto) { // Fix for browser that don't support aspect-ratio
+            padding-top: 100%;
+            height: 0;
+            position: relative;
+            overflow: hidden;
+            
+          }
+        h3 {
+            padding-bottom: .8rem;
+        }
+    }
+    .team-card-nb {
+        grid-area: nb;
+        background-image: url(https://media.revival.solutions/wp-content/themes/revival-media/assets/imgs/about-pic-1.jpg);
+    }
+    .team-card-hf {
+        grid-area: hf;
+        background-image: url(https://media.revival.solutions/wp-content/themes/revival-media/assets/imgs/about-pic-2.jpg);
+    }
+    .team-card-jg {
+        grid-area: jg;
+        background-image: url(https://media.revival.solutions/wp-content/themes/revival-media/assets/imgs/about-pic-3.jpg); 
+    }
+    .team-card-an {
+        grid-area: an;
+        background-image: url(https://media.revival.solutions/wp-content/themes/revival-media/assets/imgs/about-pic-4.jpg);    
+    }
+    .team-card-ju {
+        grid-area: ju;
+        background-image: url(https://media.revival.solutions/wp-content/themes/revival-media/assets/imgs/about-pic-1.jpg);  
+    }
+}
+@media screen and (min-width: $sm) {
+    .rev-team-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nb hf"
+                             "jg an"
+                             "ju ju";
+        .team-card-ju {
+            aspect-ratio: 2/1;
+        }
+    }
+}
+@media screen and (min-width: $lg) {
+    .rev-team-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "nb hf jg"
+                             "an ju ju";
+        .team-card-ju {
+            aspect-ratio: 2/.964;
+        }            
+    }
+}
+@media screen and (min-width: $xl) {
+    .rev-team-wrap {
+        .team-card {
+            padding: 5rem;
+        }
+    }
+}
+
+/* Our tools section */
+.our-tools-wrap {
+    max-width: 90%;
+    margin: 0 auto;
+    .our-tools-card {
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+        margin: 0 auto;
+        p {
+            max-width: 30ch;
+        }
+    }
+}
+.tool-tab {
+    position: relative;
+    background-color: $white;
+    background-size: cover;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 2rem $shadow;
+    @supports not (aspect-ratio: auto) { // Fix for browser that don't support aspect-ratio
+        padding-top: 100%;
+        height: 0;
+        overflow: hidden;
+      }
+}
+.google-maps-tool {
+    width: 13rem;
+    height: 13rem;
+    top: 3rem;
+    left: 2rem;
+}
+.shopify-tool {
+    width: 10rem;
+    height: 10rem;
+    bottom: 2rem;
+    left: -2rem;
+}
+@media screen and (min-width: $md) {
+    .our-tools-wrap {
+        max-width: 80%;
+    }
+}
+@media screen and (min-width: $lg) {
+    .our-tools-wrap {
+        max-width: 65%;
+    }
+}
+@media screen and (min-width: $xl) {
+    .our-tools-wrap {
+        max-width: 50%;
+    }
+}
+
+/* Rev Group promo section */
+.rev-group-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    .rev-card {
+        width: 100%;
+        display: grid;
+        h2, p {
+            color: $white;
+        }
+        h2 {
+            max-width: 23ch;
+        }
+        p {
+            max-width: 43ch;
+        }
+        span {
+            color: $grey;
+        }
+        a.rev-button {
+            margin-top: 1.5rem;
+            background: $grey;
+            color: $white;
+            transition: background 150ms ease, color 150ms ease;
+            align-self: end;
+        }
+        .rev-button:hover {
+            background: $white;
+        }
+        a.rev-button::before {
+            display: none;
+        }
+    }
+    .rev-group-card {
+        background-color: $pink;
+        background-image:$pink;
+        background-image:  
+        radial-gradient(at 52% 100%, hsla(6,95%,63%,1) 0, transparent 52%),  
+        radial-gradient(at 39% 53%, $purple 0, transparent 47%),  
+        radial-gradient(at 0% 0%, $connect 0, transparent 53%),  
+        radial-gradient(at 29% 0%, $connect 0, transparent 50%),  
+        radial-gradient(at 97% 0%, rgb(2, 199, 238) 0, transparent 50%),  
+        radial-gradient(at 0% 100%, $pink 0, transparent 50%),  
+        radial-gradient(at 100% 99%, hsla(35,100%,50%,1) 0, transparent 50%),  
+        radial-gradient(at 100% 31%, $purple 0, transparent 50%);
+    }
+    .rev-connect-card {
+        background-color: $connect;
+        .rev-button:hover {
+            color: $connect;
+        }
+    }
+    .rev-group-card {
+        .rev-button:hover {
+            color: $grey;
+        }
+    }
+}
+@media screen and (min-width: $lg) {
+    .rev-group-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    h2 {
+        max-width: 23ch;
+    }
+    p {
+        max-width: 43ch;
+    }
+}
