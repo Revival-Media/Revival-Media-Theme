@@ -67,10 +67,17 @@
 				
 			</div>
 		</div>
-		<div class="bottom-bar">
-			<div>
-				<img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">
-				<h4>Part of the Revival Solutions Group</h4>
+		<div class="bottom-bar-wrap">
+			<div class="bottom-bar site-width">
+				<div class="rsg-btm-bar">
+					<img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">
+					<p>Part of the <span>Revival Solutions Group</span></p>
+				</div>
+				<div class="btm-bar-menu">
+					<a href=""><p>Resourcing</p></a>
+					<a href="" style="padding: 0rem 1rem;"><p>Capital</p></a>
+					<a href=""><p>Connect</p></a>
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

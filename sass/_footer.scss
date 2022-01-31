@@ -20,6 +20,8 @@
                     width: 50%;
                 }
                 .footer-col-one {
+                    display: flex;
+                    align-items: flex-end;
                     @media screen and (min-width: $md) {
                         width: 50%;
                     }
@@ -31,11 +33,10 @@
                         li {
                             padding-bottom: 0.5rem;
                             a {
-                                color: $white;
                                 font-weight: bold;
                                 transition: color 150ms ease;
                                 &:hover {
-                                    color: $pink; 
+                                    color: $white; 
                                 }
                             }
                         }
@@ -98,8 +99,10 @@
     a {
         font-weight: bold;
         transition: color 150ms ease;
+        color: $white;
+        text-decoration: none;
         &:hover {
-            color: $white;
+            color: $pink;
         }
     }
 }
@@ -113,6 +116,45 @@
         transition: color 150ms ease;
         &:hover {
             filter: brightness(0) saturate(100%) invert(26%) sepia(65%) saturate(6104%) hue-rotate(322deg) brightness(96%) contrast(93%);
+        }
+    }
+}
+
+.bottom-bar-wrap {
+    background-image: url(/wp-content/themes/revival-media/assets/imgs/colour-bar.jpg);
+    background-size: cover;
+    .bottom-bar {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (min-width: $sm) {
+            flex-direction: row;
+        }
+        .rsg-btm-bar {
+            display: flex;
+            width: 100%;
+            img {
+                padding-right: 1rem;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .btm-bar-menu {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: $sm) {
+                flex-direction: row;
+            }
+            a {
+                padding-bottom: 0px;
+                color: $white;
+                text-decoration: none;
+            }
         }
     }
 }
