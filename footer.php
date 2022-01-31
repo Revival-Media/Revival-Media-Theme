@@ -75,7 +75,7 @@
 				</div>
 				<div class="btm-bar-menu">
 					<a href=""><p>Resourcing</p></a>
-					<a href="" style="padding: 0rem 1rem;"><p>Capital</p></a>
+					<a href=""><p>Capital</p></a>
 					<a href=""><p>Connect</p></a>
 				</div>
 			</div>
