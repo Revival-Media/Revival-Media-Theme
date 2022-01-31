@@ -5,7 +5,7 @@
     }
 }
 .services-block {
-    gap: 2.5rem;
+    gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     .rev-card {
@@ -31,5 +31,10 @@
 @media screen and (max-width: $md) {
     .services-block {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: $xl) {
+    .services-block {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
