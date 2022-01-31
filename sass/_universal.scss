@@ -76,6 +76,9 @@ a {
 a:not(.rev-button):hover {
     font-weight: bold;
 }
+a:not(.rev-button):hover p {
+    font-weight: normal;
+}
 p, a, label, input, li {
     font-size: 1.6rem;
 }
@@ -234,7 +237,7 @@ a.rev-button:hover {
     background-color: $white;
     padding: 3rem;
     border-radius: $rev-radius;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2rem $shadow;
     h1, h2, h3, h4, h5, h6, p, label, li {
         color: $grey;
     }
