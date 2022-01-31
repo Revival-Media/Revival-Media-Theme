@@ -32,6 +32,7 @@
     top: 1.5rem;
     transition: top 150ms ease;
     box-shadow: 0 0 2rem $shadow;
+    border-radius: 0.5rem;
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2));
     .screen-ui{
         display: flex;
@@ -48,14 +49,14 @@
             border-radius: 1rem;
         }
         .red {
-            background-color: #E9152E;
+            background-color: #ff5f57;
         }
         .yellow {
-            background-color: #F2C421;
+            background-color: #febc2e;
             margin: 0 0.4rem;
         }
         .green {
-            background-color: #22D73F;
+            background-color: #28c840;
         }
     }
     .screenshot {
