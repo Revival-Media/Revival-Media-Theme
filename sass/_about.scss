@@ -1,7 +1,7 @@
 /* About hero styles */
 .about-hero-wrap {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: 1.5fr 1fr 1fr .5fr;
     grid-template-rows: 3rem auto 5rem auto 2rem auto 2rem;
     grid-template-areas:"p-3 p-3 .   ."
@@ -114,7 +114,7 @@
                          "jg"
                          "an"
                          "ju";
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     .team-card {
         padding: 3rem;
         background-size: cover;
@@ -294,7 +294,7 @@
 .rev-group-wrap {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
     .rev-card {
         width: 100%;
         display: grid;
