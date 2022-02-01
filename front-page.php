@@ -13,7 +13,7 @@
 
    
 
-    <div id="hero-card-wrap" class="rev-card-wrap hp-slider" style="display: flex; position: relative; margin: 0 auto; padding: 0 0 0 5rem; max-width: 1400px; overflow: visible;">
+    <div id="hero-card-wrap" class="rev-card-wrap hp-slider" style="display: flex; position: relative; margin: 0 auto; max-width: 1400px; overflow-x: scroll;">
         
         <div class="blank"></div>
         
@@ -33,38 +33,32 @@
             $background = get_post_meta(get_the_ID(), 'Background', true);
             //Get Text Colour
             $textcolor = get_post_meta(get_the_ID(), 'Text Colour', true);
-            //Get Descktop Screenshot Colour
+            //Get Desktop Screenshot Colour
             $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
              
             // Display the Project Title and Client with Hyperlink
         ?>
 
-        <div style="background-color: <?php echo $background; ?>;" class="rev-card hero-card" id="card-<?php echo $post->ID; ?>">
+       
+        <div class="hero-card-link-wrap" style="min-width: 620px;"> <!-- Warpped card in this div so the whole card is clickable -->
             <a href="<?php the_permalink() ?>">
-                <div class="card-info-wrap">
-                    <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
-                    <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
-                    <a href="#" class="rev-button">Discover More</a>
+                <div style="background-color: <?php echo $background; ?>;" class="rev-card hero-card" id="card-<?php echo $post->ID; ?>">
+                    <div>
+                        <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
+                        <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
+                        <div style="margin-top: 1.5rem;" class="rev-button">Discover More</div>
+                    </div>
+                    <div class="screen-wrap">
+                        <div class="screen-ui">
+                            <div class="red screen-ui-btn"></div>
+                            <div class="yellow screen-ui-btn"></div>
+                            <div class="green screen-ui-btn"></div>
+                        </div>
+                        <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot"></div>
+                    </div>
                 </div>
             </a>
-            
-            <div class="screen-wrap">
-                <div class="screen-ui">
-                    <div class="red screen-ui-btn"></div>
-                    <div class="yellow screen-ui-btn"></div>
-                    <div class="green screen-ui-btn"></div>
-                </div>
-                <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot"></div>
-            </div>
         </div>
-
-        <!--<div class="rev-card hero-card" id="card-<?php echo $post->ID; ?>">
-            <a href="<?php the_permalink() ?>">
-                <h4><?php echo $clientName; ?></h4>
-                <h2><?php echo $projectName; ?></h2>
-                <a href="#" class="rev-button">Discover More</a>
-            </a>
-        </div>-->
         
         <?php 
             // Repeat the process and reset once it hits the limit

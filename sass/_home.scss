@@ -4,10 +4,15 @@
     @media screen and (min-width: $md) {
         padding: 0 0 0 5rem;
     }
+    .hero-card-link-wrap {
+        margin-right: 2rem;
+        a, p, h1, h2, h3, h4, h5, h6 {
+            text-decoration: none;
+        }
+    }
 }
 .hero-card {
     min-width: 85%;
-    margin-right: 2rem;
     padding-bottom: 0rem;
     overflow: hidden;
     cursor: pointer;
@@ -15,14 +20,11 @@
         min-width: 47.5%;
         max-width: 620px;
     }
-    a {
-        text-decoration: none;
-    }
     &:hover .screen-wrap {
         top: 0;
         transform-origin: bottom;
         }
-    &:hover a.rev-button {
+    &:hover .rev-button {
             background: $pink;
         }
 }
