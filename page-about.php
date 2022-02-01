@@ -31,7 +31,7 @@
 </section>
 <!-- Meet the team section -->
 <section class="site-width">
-    <h2><span class="grad-text">Meet the team</span> that makes it happen.</h2>
+    <h2 style="max-width: 100%;"><span class="grad-text">Meet the team</span> that makes it happen.</h2>
     <div class="rev-team-wrap">
         <div class="team-card team-card-nb">
             <h3>Niamh Beange</h3>
@@ -60,7 +60,6 @@
 <!-- Our tools section. You can do this bit James 😛 -->
 <section class="site-width">
     <div class="tools-container">
-        
         <div class="tools-top">
             <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-l-mob.png'; ?>" alt="">
             <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-r-mob.png'; ?>" alt="">
@@ -77,7 +76,6 @@
         </div>
         <img class="tools-right" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-right-dt.png'; ?>" alt="">
     </div>
-    
 </section>
 <!-- Revival Group promo section -->
 <section class="site-width rev-group-wrap">
