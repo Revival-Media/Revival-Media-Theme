@@ -31,13 +31,13 @@
 							?>
 						</div>
 						<div class="footer-col-two">
-							<a href="">
+							<a href="tel:+44-(0)-116-270-2377">
 								<div class="contact-detail">
 									<img src="<?php echo get_template_directory_uri() . '/assets/imgs/phone.svg'; ?>" alt="Facebook">
 									<p>+44 (0) 116 270 2377</p>
 								</div>
 							</a>
-							<a href="">
+							<a href="mailto:hello@media.revival.solutions" target="_blank">
 								<div class="contact-detail">
 									<img src="<?php echo get_template_directory_uri() . '/assets/imgs/mail.svg'; ?>" alt="Facebook">
 									<p>hello@media.revival.solutions</p>
@@ -69,14 +69,15 @@
 		</div>
 		<div class="bottom-bar-wrap">
 			<div class="bottom-bar site-width">
-				<div class="rsg-btm-bar">
-					<img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">
-					<p>Part of the <span>Revival Solutions Group</span></p>
-				</div>
+				<a href="https://revivalsolutions.co.uk" target="_blank">
+					<div class="rsg-btm-bar">
+						<p><img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">Part of the <span>Revival Solutions Group</span></p>
+					</div>
+				</a>
 				<div class="btm-bar-menu">
-					<a href=""><p>Resourcing</p></a>
-					<a href=""><p>Capital</p></a>
-					<a href=""><p>Connect</p></a>
+					<a href="https://revivalresourcing.co.uk" target="_blank"><p>Resourcing</p></a>
+					<a href="" target="_blank"><p>Capital</p></a>
+					<a href="" target="_blank"><p>Connect</p></a>
 				</div>
 			</div>
 		</div>

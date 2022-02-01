@@ -3,7 +3,8 @@
     .footer-container {
         display: flex;
         flex-direction: column;
-        padding-top: 2.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         .footer-info {
             display: flex;
             flex-direction: column;
@@ -52,6 +53,7 @@
                     padding: 2.5rem 0rem;
                     @media screen and (min-width: $md) {
                         padding: 0rem;
+                        width: 60%;
                     }
                     a {
                         padding-bottom: 1.5rem;
@@ -130,14 +132,22 @@
     .bottom-bar {
         max-width: 1400px;
         margin: 0 auto;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         @media screen and (min-width: $sm) {
             flex-direction: row;
+        }
+        a {
+            padding-bottom: 0;
+            color: $white;
+            text-decoration: none;
+            img:hover p, p:hover {
+                font-weight: bold;
+            }
         }
         .rsg-btm-bar {
             display: flex;
