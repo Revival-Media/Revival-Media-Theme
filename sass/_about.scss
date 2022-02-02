@@ -295,6 +295,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    @media screen and (min-width: $md) {
+        grid-template-columns: 1fr 1fr;
+    }
     .rev-card {
         width: 100%;
         display: grid;
@@ -339,15 +342,15 @@
             color: $grey;
         }
     }
-}
-@media screen and (min-width: $lg) {
-    .rev-group-wrap {
-        grid-template-columns: 1fr 1fr;
-    }
-    h2 {
-        max-width: 23ch;
-    }
-    p {
-        max-width: 50ch;
+    @media screen and (min-width: $lg) {
+        .rev-group-wrap {
+            grid-template-columns: 1fr 1fr;
+        }
+        h2 {
+            max-width: 23ch;
+        }
+        p {
+            max-width: 50ch;
+        }
     }
 }

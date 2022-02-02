@@ -11,13 +11,39 @@
     .rev-card {
         padding: 0;
         overflow: hidden;
+        height: auto;
     }
-    img.service-img {
-        object-position: center;
-        object-fit: cover;
-        min-width: 100%;
-        max-height: 30rem;
+    .service-img {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 20rem;
+        @media screen and (min-width: $md) {
+            height: 30rem;
+        }
     }
+
+    /* Service tile images */ 
+
+    .development-service {
+        background-image: url(assets/imgs/development-service.jpg);
+    }
+    .social-service {
+        background-image: url(assets/imgs/social-service.jpg);
+    }
+    .design-service {
+        background-image: url(assets/imgs/design-service.jpg);
+    }
+    .build-service {
+        background-image: url(assets/imgs/build-service.jpg);
+    }
+    .copywriting-service {
+        background-image: url(assets/imgs/copywriting-service.jpg);
+    }
+    .security-service {
+        background-image: url(assets/imgs/security-service.jpg);
+    }
+
     .service-text {
         padding: 3rem;
         .flex-wrap {

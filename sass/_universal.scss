@@ -193,13 +193,13 @@ li a {
 li.rev-bullet {
     display: list-item;
     list-style-type: disc;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-left: 16px;
 }
 li.rev-bullet span {
     font-size: 1.6rem;
-    margin-left: -.2rem;
-    top: -0.3rem;
+    margin-left: 0.5rem;
+    top: 0.1rem;
     position: relative;
 }
 
@@ -250,18 +250,18 @@ li.rev-bullet span {
 }
 
 /* Form Styles */
-@media screen and (min-width: $xx) {
-    .hf-form .hf-fields-wrap {
-        grid-template-columns: 1fr 1fr !important;
-    }
-    .text-area.field {
-        grid-column: 1 / 3;
-    }
-}
 .hf-form .hf-fields-wrap {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem 1rem;
+    gap: 2.5rem 2rem;
+    .field {
+        grid-column: 1 / 3;
+    }
+    @media screen and (min-width: $xx) {
+        .field {
+            grid-column: auto;
+        }
+    }
     .rev-button input {
         outline: none !important;
         border: none !important;
@@ -315,6 +315,14 @@ select {
     margin-top: 1rem;
     width: 100%;
     font-weight: bold;
+}
+@media screen and (min-width: $xx) {
+    .hf-form .hf-fields-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hf-fields-wrap .text-area.field {
+        grid-column: 1 / 3;
+    }
 }
 
 /* Layout styles */

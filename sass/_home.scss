@@ -1,3 +1,15 @@
+.home-hero-slider-section{
+    overflow-x: scroll;
+    max-width: fit-content;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .glide__track {
+        overflow: visible !important;
+    }
+}
 /* Hero card styles */
 .hp-slider {
     padding: 0 0 0 2rem;
@@ -5,21 +17,15 @@
         padding: 0 0 0 5rem;
     }
     .hero-card-link-wrap {
-        margin-right: 2rem;
         a, p, h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
         }
     }
 }
 .hero-card {
-    min-width: 85%;
     padding-bottom: 0rem;
     overflow: hidden;
     cursor: pointer;
-    @media screen and (min-width: $md) {
-        min-width: 47.5%;
-        max-width: 620px;
-    }
     &:hover .screen-wrap {
         top: 0;
         transform-origin: bottom;
@@ -81,7 +87,6 @@
         .flex-wrap {
             flex-direction: row;
             align-items: center;
-            margin-left: -1rem;
         }
     }
 }
