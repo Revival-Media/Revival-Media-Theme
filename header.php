@@ -16,8 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/revival-scripts.js'; ?>"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+	<link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<?php wp_head(); ?>
 </head>
 
