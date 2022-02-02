@@ -184,3 +184,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/* Load GlideJS script
+function load_glide() {
+	wp_enqueue_script( 'glide', get_template_directory_uri() . '/../../../node_modules/@glidejs/glide/dist/glide.min.js', false, true);
+} 
+add_action('wp_enqueue_scripts', 'load_glide');
+*/
+add_theme_support( 'block-templates' );
