@@ -19,7 +19,6 @@
     .map-card {
         padding: 0;
         overflow: hidden;
-        grid-row: 2 / 3;
         iframe {
             border: none;
         }
@@ -37,6 +36,16 @@
                     margin-left: 0;
                 }
             }
+        }
+    }
+    .rev-group-wrap {
+        display: block;
+        .rev-group-card{
+            background-image: url(/wp-content/themes/revival-media/assets/imgs/revival-group-background.jpg);
+            background-size: cover;
+            h2, p {
+                color: $white;
+            } 
         }
     }
 }
@@ -58,24 +67,27 @@
     .contact-wrap {
         grid-template-columns: 1fr 1fr;
         .form-card {
-            margin-top: -15rem;
+            grid-row: 1 / 2;
         }
         .map-card {
-            grid-row: 1 / 2;
+            margin-top: -19rem;
         }
     }
 }
 @media screen and (min-width: $xl) {
     .contact-wrap {
-            .map-card .address-wrap .contact-info-wrap {
-            flex-direction: row;
-            div:first-child {
-                margin-top: 1rem;
-                margin-right: 1rem;
-            }
-            div:last-child {
-                margin-top: 1rem;
-                margin-left: 1rem;
+        .map-card {
+            margin-top: -27rem;
+            .address-wrap .contact-info-wrap {
+                flex-direction: row;
+                div:first-child {
+                    margin-top: 1rem;
+                    margin-right: 1rem;
+                }
+                div:last-child {
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
             }
         }
     }
