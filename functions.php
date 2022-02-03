@@ -191,4 +191,31 @@ function load_glide() {
 } 
 add_action('wp_enqueue_scripts', 'load_glide');
 */
+
+/* Adds templates to block editor */
 add_theme_support( 'block-templates' );
+
+// Creates the project custom post type
+function create_projects() {
+ 
+    register_post_type( 'projects',
+    // CPT Options
+        array(
+            'labels' 		=> array(
+                'name' 			=> __( 'Projects' ),
+                'singular_name' => __( 'Project' )
+            ),
+            'public'		=> true,
+            'has_archive'	=> true,
+            'rewrite' 		=> array(
+				'slug' 			=> 'projects'),
+			'show_in_rest' 	=> true,
+			'menu_icon'		=> 'dashicons-hammer',
+			'supports' 		=> array( 
+				'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',
+			),
+			'taxonomies'  => array( 'category' )
+        )
+    );
+}
+add_action( 'init', 'create_projects' );
