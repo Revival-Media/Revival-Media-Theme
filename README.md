@@ -1,7 +1,7 @@
 Revival Media
 ========
 
-Hi. I'm a WordPress starter theme called `Esqueleto`. I'm a theme meant for hacking so don't use me as a Parent Theme. 
+Hi. I'm a WordPress starter theme called `Revival Media`. I'm a theme meant for hacking so don't use me as a Parent Theme. 
 Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 
@@ -44,7 +44,7 @@ versions)
 
 ### Quick Start
 
-Clone the repository to a directory with your desired theme name (like, say, `encarnado`):
+Clone the repository to a directory with your desired theme name (like, say, `Revival Connect`):
 ```shell
 $ git clone --single-branch https://github.com/fabio-blanco/esqueleto.git encarnado
 ```
