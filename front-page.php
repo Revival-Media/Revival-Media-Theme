@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="site-width" style="">
+<section class="site-width">
         <h1 style="padding-bottom: 2rem;">
             We are <span class="grad-text">Revival Media</span> 👋<br>
         </h1>
@@ -9,63 +9,93 @@
         </h2>
         <a class="rev-button" style="margin-top: 4rem;">Learn About Us</a>
 </section>
-<section>
+<section class="site-width home-hero-slider-section">
 
-   
-
-    <div id="hero-card-wrap" class="rev-card-wrap hp-slider" style="display: flex; position: relative; margin: 0 auto; max-width: 1400px; overflow-x: scroll;">
-        
-        <div class="blank"></div>
-        
-        <?php 
-            // Define Query Parameters
-            $home_posts = new WP_Query( 'tag=homepage' );
-        ?>
-            
-        <?php 
-            // Start WP Query
-            while ($home_posts -> have_posts()) : $home_posts -> the_post(); 
-            // Get Project Name
-            $projectName = get_post_meta(get_the_ID(), 'Project', true);
-            //Get Client Name
-            $clientName = get_post_meta(get_the_ID(), 'Client', true);
-            //Get Background Colour
-            $background = get_post_meta(get_the_ID(), 'Background', true);
-            //Get Text Colour
-            $textcolor = get_post_meta(get_the_ID(), 'Text Colour', true);
-            //Get Desktop Screenshot Colour
-            $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
-             
-            // Display the Project Title and Client with Hyperlink
-        ?>
-
-       
-        <div class="hero-card-link-wrap" style="min-width: 620px;"> <!-- Warpped card in this div so the whole card is clickable -->
-            <a href="<?php the_permalink() ?>">
-                <div style="background-color: <?php echo $background; ?>;" class="rev-card hero-card" id="card-<?php echo $post->ID; ?>">
-                    <div>
-                        <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
-                        <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
-                        <div style="margin-top: 1.5rem;" class="rev-button">Discover More</div>
+    <div class="home-glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <?php 
+                    // Define Query Parameters
+                    $home_posts = new WP_Query( 'post_type=projects' );
+                ?>
+                    
+                <?php 
+                    // Start WP Query
+                    while ($home_posts -> have_posts()) : $home_posts -> the_post(); 
+                    // Get Project Name
+                    $projectName = get_post_meta(get_the_ID(), 'Project', true);
+                    //Get Client Name
+                    $clientName = get_post_meta(get_the_ID(), 'Client', true);
+                    //Get Background Colour
+                    $background = get_post_meta(get_the_ID(), 'Background', true);
+                    //Get Text Colour
+                    $textcolor = get_post_meta(get_the_ID(), 'Text Colour', true);
+                    //Get Desktop Screenshot Colour
+                    $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
+                        
+                    // Display the Project Title and Client with Hyperlink
+                ?>
+                <li class="glide__slide">
+                    <div class="hero-card-link-wrap">
+                        <a href="<?php the_permalink() ?>">
+                            <div style="background-color: <?php echo $background; ?>;" class="rev-card hero-card" id="card-<?php echo $post->ID; ?>">
+                                <div>
+                                    <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
+                                    <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
+                                    <div style="margin-top: 1.5rem;" class="rev-button">Discover More</div>
+                                </div>
+                                <div class="screen-wrap">
+                                    <div class="screen-ui">
+                                        <div class="red screen-ui-btn"></div>
+                                        <div class="yellow screen-ui-btn"></div>
+                                        <div class="green screen-ui-btn"></div>
+                                    </div>
+                                    <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot"></div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="screen-wrap">
-                        <div class="screen-ui">
-                            <div class="red screen-ui-btn"></div>
-                            <div class="yellow screen-ui-btn"></div>
-                            <div class="green screen-ui-btn"></div>
-                        </div>
-                        <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot"></div>
-                    </div>
-                </div>
-            </a>
+                </li>
+                <?php 
+                    // Repeat the process and reset once it hits the limit
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
+            </ul>
         </div>
-        
-        <?php 
-            // Repeat the process and reset once it hits the limit
-            endwhile;
-            wp_reset_postdata();
-        ?>
     </div>
+    
+    <!-- GlideJS script -->
+    <script>
+        var glide = new Glide('.home-glide', {
+            type: 'carousel',
+            perView: 3,
+            perTouch: 3,
+            focusAt: 0,
+            gap: 20,
+            autoplay: 8000,
+            animationDuration: 150,
+            peek: 150,
+            breakpoints: {
+                1600: { // Breakpoint at <1600px
+                    perView: 2,
+                    peek: 100
+                },
+                1309: {
+                    perView: 2,
+                    peek: 50
+                },
+                767: {
+                    perView: 1,
+                    peek: 100
+                },
+                575: {
+                    perView: 1,
+                    peek: 25
+                }
+            }
+        }).mount()
+    </script>
 
 </section>
 <section class="site-width">
@@ -150,10 +180,92 @@
         </div>
     </div>
 </section>
-<section class="site-width">
+
+<div class="site-width" style="padding-bottom: 5rem;">
     <h2>
         <span class="grad-text">Our clients</span> speak for themselves.
     </h2>
+</div>
+
+<section class="site-width client-slider-section">
+
+    <div class="client-glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <?php 
+                    // Define Query Parameters
+                    $client_posts = new WP_Query( 'tag=client' );
+                ?>
+                    
+                <?php 
+                    // Start WP Query
+                    while ($client_posts -> have_posts()) : $client_posts -> the_post(); 
+                    //Get Client Name
+                    $clientName = get_post_meta(get_the_ID(), 'Client', true);
+                    //Get Headline
+                    $headline = get_post_meta(get_the_ID(), 'Headline', true);
+                    //Get Testimonial Paragraph
+                    $testimonial = get_post_meta(get_the_ID(), 'Testimonial', true);
+                    //Get Client Name and Job Title
+                    $namePosition = get_post_meta(get_the_ID(), 'Name and Position', true);
+                        
+                    // Display the Project Title and Client with Hyperlink
+                ?>
+                <li class="glide__slide client-card">
+                        <div class="clients-text rev-card">
+                            <h4><?php echo $clientName; ?></h4>
+                            <h2><?php echo $headline; ?></h2>
+                            <p><?php echo $testimonial; ?></p>
+                            <p style="font-weight: bold;"><?php echo $namePosition; ?></p>
+                            <div class="">
+                                <a href="">View Project</a>
+                                <a href="">Company Website</a>
+                            </div>
+                        </div>
+                        <div class="client-img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+                </li>
+                <?php 
+                    // Repeat the process and reset once it hits the limit
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- GlideJS script -->
+    <script>
+        var glide = new Glide('.client-glide', {
+            type: 'carousel',
+            perView: 2,
+            perTouch: 2,
+            focusAt: 0,
+            gap: 20,
+            autoplay: 8000,
+            animationDuration: 150,
+            peek: 150,
+            breakpoints: {
+                2000: { // Breakpoint at <1600px
+                    peek: 100,
+                    perView: 1,
+                    perTouch: 1
+                },
+                1309: {
+                    perView: 1,
+                    peek: 50
+                },
+                767: {
+                    perView: 1,
+                    peek: 100
+                },
+                575: {
+                    perView: 1,
+                    peek: 25
+                }
+            }
+        }).mount()
+    </script>
+
 </section>
 
 <?php get_template_part('template-parts/contact-form'); ?>
