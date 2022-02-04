@@ -4,7 +4,10 @@
     overflow: hidden;
     .contact-card-text {
         padding: 5rem;
-        width: 50%;
+        width: 100%;
+        @media screen and (min-width: $lg) {
+            width: 50%;
+        }
     }
     .contact-template-img {
         object-fit: cover;
