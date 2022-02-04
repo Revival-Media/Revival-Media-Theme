@@ -11,7 +11,7 @@
 </section>
 <section class="site-width home-hero-slider-section">
 
-    <div class="home-glide">
+    <div class="home-glide hp-slider">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <?php 

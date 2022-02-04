@@ -1,5 +1,5 @@
 .home-hero-slider-section{
-    overflow-x: scroll;
+    overflow: hidden;
     max-width: fit-content;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -8,6 +8,9 @@
     }
     .glide__track {
         overflow: visible !important;
+        .glide__slide {
+            height: auto;
+        }
     }
 }
 /* Hero card styles */
@@ -17,6 +20,7 @@
         padding: 0 0 0 5rem;
     }
     .hero-card-link-wrap {
+        height: 100%;
         a, p, h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
         }
@@ -25,6 +29,7 @@
 .hero-card {
     padding-bottom: 0rem;
     overflow: hidden;
+    height: 100%;
     cursor: pointer;
     &:hover .screen-wrap {
         top: 0;
@@ -70,6 +75,7 @@
     .screenshot {
         height: 300px;
         background-size: cover;
+        margin-bottom: -4rem;
     }
 }
 
@@ -178,4 +184,69 @@
     background-image: url(assets/imgs/social-media.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* Client Testimonials Section */
+
+.client-slider-section {
+    overflow-x: hidden;
+    max-width: fit-content;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .glide__track {
+        overflow: visible !important;
+    }
+    .glide__slides {
+        display: flex;
+        height: auto;
+        .glide__slide {
+            height: auto;
+        }
+    }
+}
+
+.client-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    flex-basis: auto;
+    @media screen and (min-width: $lg) {
+        flex-direction: row;
+    }
+    .clients-text {
+        border-top-right-radius: 0rem;
+        border-top-left-radius: 0rem;
+        flex: 1;
+        @media screen and (min-width: $lg) {
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+            border-bottom-left-radius: 1.5rem;
+            border-top-left-radius: 1.5rem;
+            width: 50%;
+        }
+        a {
+            padding-right: 1rem;
+            text-decoration: underline;
+        }
+    }
+    .client-img {
+        background-image: url(assets/imgs/client-pp.jpg);
+        background-size: cover;
+        background-position: center;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+        height: 30rem;
+        @media screen and (min-width: $lg) {
+            height: auto;
+            width: 50%;
+            border-top-right-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            border-top-left-radius: 0rem;
+        }
+    }
 }
