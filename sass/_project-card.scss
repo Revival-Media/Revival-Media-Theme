@@ -1,0 +1,120 @@
+.hp-slider {
+    padding: 0 0 0 2rem;
+    @media screen and (min-width: $md) {
+        padding: 0 0 0 5rem;
+    }
+    .hero-card-link-wrap {
+        height: 100%;
+        a, p, h1, h2, h3, h4, h5, h6 {
+            text-decoration: none;
+        }
+    }
+}
+.hero-card {
+    padding-bottom: 0rem;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover .screen-wrap {
+        top: -1rem;
+        transform-origin: bottom;
+        }
+    &:hover .rev-button {
+            background: $pink;
+        }
+    h2 {
+        padding-bottom: 1rem;
+    }
+    h4 {
+        padding-bottom: .5rem;
+    }
+}
+.screen-wrap {
+    margin-top: 3.5rem;
+    position: relative;
+    top: 0rem;
+    transition: top 150ms ease;
+    box-shadow: 0 0 2rem $shadow;
+    border-radius: 0.5rem;
+    // filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2)); <- Is this needed?
+    .screen-ui {
+        display: flex;
+        flex-direction: row;
+        height: 2rem;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 1.5rem 1.5rem 0 0;
+        align-items: center;
+        padding-left: 0.8rem;
+        
+        .screen-ui-btn {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 1rem;
+            display: none;
+        }
+        .red {
+            background-color: #ff5f57;
+        }
+        .yellow {
+            background-color: #febc2e;
+            margin: 0 0.4rem;
+        }
+        .green {
+            background-color: #28c840;
+        }
+    }
+    .screenshot {
+        height: 500px;
+        background-size: cover;
+        margin-bottom: -1rem;
+        @media screen and (min-width: $md) {
+            height: 350px;
+        }
+    }
+}
+
+/* Project Card Website Media Swap */
+.screenshot-desktop {
+    display: none;
+}
+.screenshot-mobile {
+    display: block;
+}
+@media screen and (min-width: $lg) {
+    .screenshot-desktop {
+        display: block;
+    }
+    .screenshot-mobile {
+        display: none;
+    }
+    .screen-ui-btn {
+        display: block !important;
+    }
+    .screen-ui {
+        border-radius: 0.5rem 0.5rem 0 0 !important;
+    }
+}
+
+/* Category Styles */
+.hero-card:not(.web-development) {
+    .screen-wrap {
+        box-shadow: none;
+        margin-bottom: 3rem;
+        margin-left: -10rem;
+    }
+    .screen-ui {
+        display: none;
+    }
+    .screenshot-desktop {
+        display: block !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .screenshot-mobile {
+        display: none !important;
+    }
+}
