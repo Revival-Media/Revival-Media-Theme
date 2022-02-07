@@ -9,57 +9,21 @@
         </h2>
         <a class="rev-button" style="margin-top: 4rem;">Learn About Us</a>
 </section>
+<?php 
+    // Define Query Parameters
+    $home_posts = new WP_Query( 'post_type=projects' );
+?>
 <section class="site-width home-hero-slider-section">
-
     <div class="home-glide hp-slider">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <?php 
-                    // Define Query Parameters
-                    $home_posts = new WP_Query( 'post_type=projects' );
-                ?>
-                    
-                <?php 
                     // Start WP Query
                     while ($home_posts -> have_posts()) : $home_posts -> the_post(); 
-                    // Get post categories
-                    $cats = get_the_category($id);
-                    // Get Project Name
-                    $projectName = get_post_meta(get_the_ID(), 'Project', true);
-                    //Get Client Name
-                    $clientName = get_post_meta(get_the_ID(), 'Client', true);
-                    //Get Background Colour
-                    $background = get_post_meta(get_the_ID(), 'Background', true);
-                    //Get Text Colour
-                    $textcolor = get_post_meta(get_the_ID(), 'Text Colour', true);
-                    //Get Desktop Screenshot
-                    $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
-                    //Get Mobile Screenshot
-                    $mobile = get_post_meta(get_the_ID(), 'mobile', true);
-                        
                     // Display the Project Title and Client with Hyperlink
                 ?>
                 <li class="glide__slide">
-                    <div class="hero-card-link-wrap">
-                        <a href="<?php the_permalink() ?>">
-                            <div style="background: <?php echo $background; ?>;" class="rev-card hero-card <?php echo $cats[0]->slug; ?>" id="card-<?php echo $post->ID; ?>">
-                                <div>
-                                    <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
-                                    <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
-                                    <!-- <div style="margin-top: .5rem;" class="rev-button">Discover More</div> -->
-                                </div>
-                                <div class="screen-wrap">
-                                    <div class="screen-ui">
-                                        <div class="red screen-ui-btn"></div>
-                                        <div class="yellow screen-ui-btn"></div>
-                                        <div class="green screen-ui-btn"></div>
-                                    </div>
-                                    <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot screenshot-desktop"></div>
-                                    <div style="background-image: url(<?php echo $mobile; ?>);" class="screenshot screenshot-mobile"></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <?php include('template-parts/project-card.php'); ?>
                 </li>
                 <?php 
                     // Repeat the process and reset once it hits the limit
@@ -251,7 +215,7 @@
             animationDuration: 150,
             peek: 150,
             breakpoints: {
-                2000: { // Breakpoint at <1600px
+                2000: {
                     peek: 100,
                     perView: 1,
                     perTouch: 1
@@ -274,6 +238,6 @@
 
 </section>
 
-<?php get_template_part('template-parts/contact-form'); ?>
+<?php get_template_part( 'template-parts/contact-form' ); ?>
 
 <?php get_footer(); ?>
