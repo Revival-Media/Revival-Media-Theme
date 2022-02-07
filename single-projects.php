@@ -10,6 +10,10 @@
     $topText = get_post_meta(get_the_ID(), 'top-text', true);
     //Get Top Paragraph Text
     $topTextP = get_post_meta(get_the_ID(), 'top-text-p', true);
+    //Get Desktop Screenshot
+    $desktop = get_post_meta(get_the_ID(), 'Desktop', true);
+    //Get Mobile Screenshot
+    $mobile = get_post_meta(get_the_ID(), 'mobile', true);
 ?>
 
 <section class="proj-hero-wrap">
@@ -29,19 +33,24 @@
         <p><?php echo $topTextP; ?></p>
     </div>
 </section>
-<section class="web-iframes-section site-width">
-    <div class="screen-wrap">
+<!-- This section is only displayed if the project's mobile metafield is blank -->
+<section class="web-screenshot-section site-width" style="display: <?php if (empty($mobile)) { echo none; } else { echo grid; } ?>;">
+    <div class="screen-wrap" style="height: 600px; overflow: hidden;">
         <div class="screen-ui">
             <div class="red screen-ui-btn"></div>
             <div class="yellow screen-ui-btn"></div>
             <div class="green screen-ui-btn"></div>
         </div>
-        <iframe style="width: 100%; height: 600px; overflow: hidden;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Faod1qFZ5p5Ul87qMgd06RB%2FPrecision-Prep-Prototype-Master%3Fpage-id%3D1534%253A9717%26node-id%3D1534%253A10214%26viewport%3D241%252C48%252C0.16%26scaling%3Dscale-down-width" width="100%" height="100%" scrolling="yes" frameBorder="0"></iframe>
+        <div style="overflow-y: scroll; height: 100%;">
+            <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktop; ?>">
+        </div>
     </div>
-    <div class="screen-wrap">
+    <div class="screen-wrap" style="scroll; height: 600px; overflow: hidden;">
         <div class="screen-ui">
         </div>
-        <iframe style="width: 100%; height: 600px; overflow: hidden;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Faod1qFZ5p5Ul87qMgd06RB%2FPrecision-Prep-Prototype-Master%3Fpage-id%3D1534%253A9717%26node-id%3D1534%253A9718%26viewport%3D241%252C48%252C0.63%26scaling%3Dscale-down-width" width="100%" height="100%" scrolling="yes" frameBorder="0"></iframe>
+        <div style="overflow-y: scroll; height: 100%;">
+            <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobile; ?>">
+        </div>
     </div>
 </section>
 <section class="feature-section site-width">
@@ -49,13 +58,11 @@
         <div class="rev-card hp-img-1"></div>
         <div class="card-image-wrap">
             <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development.</span></h3>
-            <a class="rev-button">View Projects</a>
         </div>
     </div>
     <div class="image-text-wrap card-switch">
         <div style="text-align: right;" class="card-image-wrap">
             <h3><span class="grad-text">Wordpress sites</span> to showcase your business and boost online enagement.</h3>
-            <a class="rev-button">View Projects</a>
         </div>
         <div class="rev-card hp-img-2"></div>
     </div>
@@ -63,7 +70,6 @@
         <div class="rev-card hp-img-3"></div>
         <div class="card-image-wrap">
             <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands.</span></h3>
-            <a class="rev-button">View Projects</a>
         </div>
     </div>
 </section>
