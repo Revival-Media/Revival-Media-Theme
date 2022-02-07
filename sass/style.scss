@@ -43,5 +43,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "contact";
 
-/* Template styles */
+/* Templates and parts styles */
 @import "template-contact";
+
+@import "single-projects";
+
+@import "project-card";
