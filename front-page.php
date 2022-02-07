@@ -11,7 +11,11 @@
 </section>
 <?php 
     // Define Query Parameters
-    $home_posts = new WP_Query( 'post_type=projects' );
+    $homeArgs = array(
+        'tag' => 'homepage',
+        'post_type' => 'projects'
+    );
+    $home_posts = new WP_Query( $homeArgs );
 ?>
 <section class="site-width home-hero-slider-section">
     <div class="home-glide hp-slider">
