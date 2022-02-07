@@ -214,7 +214,7 @@ function create_projects() {
 			'supports' 		=> array( 
 				'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',
 			),
-			'taxonomies'  => array( 'category' )
+			'taxonomies'  => array( 'category', 'post_tag' )
         )
     );
 }
