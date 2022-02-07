@@ -19,6 +19,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/revival-scripts.js'; ?>"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/magic-mouse.css' ?>">
 	<?php wp_head(); ?>
 </head>
 
