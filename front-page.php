@@ -42,7 +42,7 @@
     <script>
         var glide = new Glide('.home-glide', {
             type: 'carousel',
-            perView: 2,
+            perView: 3,
             perTouch: 3,
             focusAt: 0,
             gap: 20,
@@ -219,7 +219,7 @@
             animationDuration: 150,
             peek: 150,
             breakpoints: {
-                2000: {
+                1750: {
                     peek: 100,
                     perView: 1,
                     perTouch: 1
@@ -230,11 +230,11 @@
                 },
                 767: {
                     perView: 1,
-                    peek: 100
+                    peek: 50
                 },
                 575: {
                     perView: 1,
-                    peek: 25
+                    peek: 20
                 }
             }
         }).mount()
