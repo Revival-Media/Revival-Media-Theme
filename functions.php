@@ -219,3 +219,8 @@ function create_projects() {
     );
 }
 add_action( 'init', 'create_projects' );
+
+
+
+/* stops wp scaling down imags */
+add_filter( 'big_image_size_threshold', '__return_false' );
