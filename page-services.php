@@ -6,7 +6,7 @@
         </h1>
 </section>
 <section class="site-width services-block">
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img development-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
@@ -26,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img social-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
@@ -46,7 +46,7 @@
             </ul>
         </div>
     </div>
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img design-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
@@ -66,7 +66,7 @@
             </ul>
         </div>
     </div>
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img build-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
@@ -86,7 +86,7 @@
             </ul>
         </div>
     </div>
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img copywriting-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
@@ -106,7 +106,7 @@
             </ul>
         </div>
     </div>
-    <div class="rev-card">
+    <div class="rev-card rev-padding">
         <div class="service-img security-service"></div>
         <div class="service-text">
             <div class="flex-wrap">

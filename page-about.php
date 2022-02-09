@@ -65,7 +65,7 @@
             <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-r-mob.png'; ?>" alt="">
         </div>
         <img class="tools-left" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-left-dt.png'; ?>" alt="">
-        <div class="rev-card our-tools-card">
+        <div class="rev-card rev-padding our-tools-card">
             <h1>Our tools 🛠️</h1>
             <p>We use a suite of modern tools to help us do good work and stuff.</p>
             <a href="<?php echo get_template_directory_uri() . '/work'; ?>" class="rev-button">View them in action</a>
@@ -79,7 +79,7 @@
 </section>
 <!-- Revival Group promo section -->
 <section class="site-width rev-group-wrap">
-    <div class="rev-card rev-group-card">
+    <div class="rev-card rev-padding rev-group-card">
         <h2>
             Proud to be a part of the <span>Revival Solutions Group</span>
         </h2>
@@ -90,7 +90,7 @@
         </p>
         <a href="https://revivalsolutions.co.uk" class="rev-button">Discover More</a>
     </div>
-    <div class="rev-card rev-connect-card">
+    <div class="rev-card rev-padding rev-connect-card">
         <h2>
             Boost your sales with <span>Revival Connect</span>
         </h2>

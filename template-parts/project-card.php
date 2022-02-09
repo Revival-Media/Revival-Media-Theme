@@ -17,7 +17,7 @@
 <div class="hero-card-link-wrap magic-hover">
     <a href="<?php the_permalink() ?>">
         <div style="background: <?php echo $background; ?>;" class="rev-card hero-card <?php echo $cats[0]->slug; ?>" id="card-<?php echo $post->ID; ?>">
-            <div>
+            <div class="rev-padding">
                 <h4 style="color: <?php echo $textcolor; ?>;"><?php echo $clientName; ?></h4>
                 <h2 style="color: <?php echo $textcolor; ?>;"><?php echo $projectName; ?></h2>
                 <div style="margin-top: .5rem; color: <?php echo $textcolor; ?>;">Discover More ></div>

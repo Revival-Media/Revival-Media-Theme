@@ -1,5 +1,5 @@
 <section class="site-width">
-    <div class="rev-card contact-card">
+    <div class="rev-card rev-padding contact-card">
         <div class="contact-card-text">
             <h3>Like the idea of working with us?</h3>
             <h1>Book an <span class="grad-text">intro call</span> today.</h1>

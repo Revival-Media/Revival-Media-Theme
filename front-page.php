@@ -73,7 +73,7 @@
 
 </section>
 <section class="site-width">
-    <div class="rev-card services-card">
+    <div class="rev-card services-card rev-padding">
         <h3 class="grad-text">Our services</h3>
         <h2 style="max-width: 44ch;">
             Our integrated <span class="grad-text">web, social, print and digital</span> services make brands work for business. 
@@ -133,7 +133,7 @@
 </section>
 <section class="site-width card-text-section">
     <div class="image-text-wrap">
-        <div class="rev-card hp-img-1"></div>
+        <div class="rev-card rev-padding hp-img-1"></div>
         <div class="card-image-wrap">
             <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development.</span></h3>
             <a class="rev-button">View Projects</a>
@@ -144,10 +144,10 @@
             <h3><span class="grad-text">Wordpress sites</span> to showcase your business and boost online enagement.</h3>
             <a class="rev-button">View Projects</a>
         </div>
-        <div class="rev-card hp-img-2"></div>
+        <div class="rev-card rev-padding hp-img-2"></div>
     </div>
     <div class="image-text-wrap">
-        <div class="rev-card hp-img-3"></div>
+        <div class="rev-card rev-padding hp-img-3"></div>
         <div class="card-image-wrap">
             <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands.</span></h3>
             <a class="rev-button">View Projects</a>
@@ -186,7 +186,7 @@
                     // Display the Project Title and Client with Hyperlink
                 ?>
                 <li class="glide__slide client-card">
-                        <div class="clients-text rev-card">
+                        <div class="clients-text rev-card rev-padding">
                             <h4><?php echo $clientName; ?></h4>
                             <h2><?php echo $headline; ?></h2>
                             <p><?php echo $testimonial; ?></p>
@@ -217,10 +217,10 @@
             gap: 20,
             autoplay: 8000,
             animationDuration: 150,
-            peek: 150,
+            peek: 200,
             breakpoints: {
                 1750: {
-                    peek: 100,
+                    peek: 150,
                     perView: 1,
                     perTouch: 1
                 },

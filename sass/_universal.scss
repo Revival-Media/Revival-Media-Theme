@@ -238,15 +238,17 @@ li.rev-bullet span {
 /* Card Styles */
 .rev-card {
     background-color: $white;
-    padding: 3rem;
     border-radius: $rev-radius;
     box-shadow: 0 0 2rem $shadow;
     h1, h2, h3, h4, h5, h6, p, label, li {
         color: $grey;
     }
 }
+.rev-padding {
+    padding: 3rem;
+}
 @media screen and (min-width: $sm) {
-    .rev-card {
+    .rev-padding {
         padding: 5rem;
     }
 }
