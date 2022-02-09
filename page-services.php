@@ -7,7 +7,7 @@
 </section>
 <section class="site-width services-block">
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/development-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img development-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/web-dev-icon.svg'; ?>" alt="Development">
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/social-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img social-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/social-icon.svg'; ?>" alt="Social">
@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/design-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img design-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img style="transform: scale(0.7);" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print">
@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/build-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img build-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-build-icon.svg'; ?>" alt="Brand">
@@ -87,7 +87,7 @@
         </div>
     </div>
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/copywriting-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img copywriting-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/copywriting-icon.svg'; ?>" alt="Copywriting">
@@ -107,7 +107,7 @@
         </div>
     </div>
     <div class="rev-card">
-        <img class="service-img" src="<?php echo get_template_directory_uri() . '/assets/imgs/security-service.jpg'; ?>" alt="Strategy">
+        <div class="service-img security-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/security-icon.svg'; ?>" alt="Security">
