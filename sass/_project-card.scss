@@ -39,6 +39,10 @@
     transition: top 150ms ease;
     box-shadow: 0 0 2rem $shadow;
     border-radius: 0.5rem;
+    margin: 0 3rem;
+    @media screen and (min-width: $sm) {
+        margin: 0 5rem;
+    }
     // filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.2)); <- Is this needed?
     .screen-ui {
         display: flex;
@@ -102,7 +106,8 @@
 .hero-card:not(.web-development) {
     .screen-wrap {
         box-shadow: none;
-        margin-bottom: 3rem;
+        margin-left: 0;
+        margin-right: 0;
         /*margin-right: -10rem;*/
     }
     .screen-ui {
