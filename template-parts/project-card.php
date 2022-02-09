@@ -28,8 +28,8 @@
                     <div class="yellow screen-ui-btn"></div>
                     <div class="green screen-ui-btn"></div>
                 </div>
-                <div style="background-image: url(<?php echo $desktop; ?>);" class="screenshot screenshot-desktop"></div>
-                <div style="background-image: url(<?php echo $mobile; ?>);" class="screenshot screenshot-mobile"></div>
+                <div style="background-image: url(../<?php echo $desktop; ?>);" class="screenshot screenshot-desktop"></div>
+                <div style="background-image: url(../<?php echo $mobile; ?>);" class="screenshot screenshot-mobile"></div>
             </div>
         </div>
     </a>
