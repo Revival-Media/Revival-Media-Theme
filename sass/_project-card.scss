@@ -67,7 +67,7 @@
         }
     }
     .screenshot {
-        height: 500px;
+        height: 300px;
         background-size: cover;
         margin-bottom: -1rem;
         @media screen and (min-width: $md) {
@@ -103,7 +103,7 @@
     .screen-wrap {
         box-shadow: none;
         margin-bottom: 3rem;
-        margin-left: -10rem;
+        /*margin-right: -10rem;*/
     }
     .screen-ui {
         display: none;
@@ -112,7 +112,7 @@
         display: block !important;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
     }
     .screenshot-mobile {
         display: none !important;
