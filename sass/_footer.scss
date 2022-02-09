@@ -5,6 +5,9 @@
         flex-direction: column;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        .rm-logo-wrap {
+            width: fit-content;
+        }
         .footer-info {
             display: flex;
             flex-direction: column;
@@ -37,9 +40,13 @@
                                 font-weight: bold;
                                 transition: color 150ms ease;
                                 &:hover {
-                                    color: $white; 
+                                    color: $pink; 
                                 }
                             }
+                            
+                        }
+                        .current-menu-item a {
+                            color: $pink;
                         }
                         li:last-child {
                             padding-bottom: 0rem;

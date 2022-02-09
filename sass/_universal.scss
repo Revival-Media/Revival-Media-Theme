@@ -76,9 +76,11 @@ a {
 a:not(.rev-button):hover {
     font-weight: bold;
 }
-a:not(.rev-button):hover p {
-    font-weight: normal;
+
+.current-menu-item a {
+    color: $pink;
 }
+
 p, a, label, input, li, textarea {
     font-size: 1.6rem;
 }
