@@ -136,7 +136,7 @@
     <div class="image-text-wrap">
         <div class="rev-card rev-padding hp-img-1"></div>
         <div class="card-image-wrap">
-            <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development.</span></h3>
+            <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development</span>.</h3>
             <a class="rev-button">View Projects</a>
         </div>
     </div>
@@ -150,7 +150,7 @@
     <div class="image-text-wrap">
         <div class="rev-card rev-padding hp-img-3"></div>
         <div class="card-image-wrap">
-            <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands.</span></h3>
+            <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands</span>.</h3>
             <a class="rev-button">View Projects</a>
         </div>
     </div>

@@ -104,8 +104,9 @@
         </div>
     </div>
 </section>
+<?php get_template_part('template-parts/contact-form'); ?>
 <section class="site-width" style="padding-bottom: 3rem;">
-    <h2>Some of our <span class="grad-text">other projects.</span></h2>
+    <h2>Some of our <span class="grad-text">other projects</span>.</h2>
 </section>
 <section class="related-projects-section site-width">
     <div class="project-page-glide">
@@ -161,7 +162,5 @@
         }).mount()
     </script>
 </section>
-
-<?php get_template_part('template-parts/contact-form'); ?>
 
 <?php get_footer(); ?>
