@@ -12,8 +12,9 @@
 <?php 
     // Define Query Parameters
     $homeArgs = array(
-        'tag' => 'homepage',
-        'post_type' => 'projects'
+        'tag'       => 'homepage',
+        'post_type' => 'projects',
+        'orderby'   => 'rand'
     );
     $home_posts = new WP_Query( $homeArgs );
 ?>
