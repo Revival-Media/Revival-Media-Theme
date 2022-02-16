@@ -21,6 +21,16 @@
 	<link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/magic-mouse.css' ?>">
 	<?php wp_head(); ?>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() . '/assets/imgs/apple-touch-icon.png';?>">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() . '/assets/imgs/favicon-32x32.png';?>">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() . '/assets/imgs/favicon-16x16.png';?>">
+	<link rel="manifest" href="<?php echo get_template_directory_uri() . '/assets/imgs/site.webmanifest';?>">
+	<link rel="mask-icon" href="<?php echo get_template_directory_uri() . '/assets/imgs/safari-pinned-tab.svg';?>" color="#ed1f78">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/imgs/favicon.ico';?>">
+	<meta name="msapplication-TileColor" content="#161616">
+	<meta name="msapplication-config" content="<?php echo get_template_directory_uri() . '/assets/imgs/browserconfig.xml';?>">
+	<meta name="theme-color" content="#161616">
 </head>
 
 <body <?php body_class(); ?>>
