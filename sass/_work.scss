@@ -1,3 +1,25 @@
+section.work-hero-section {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    align-items: end;
+}
+.drop-workaround {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.drop-workaround::after {
+    content: "";
+    width: 1.6em;
+    height: 1em;
+    background-color: $pink;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2.4rem;
+    pointer-events: none;
+}
 .work-grid-section {
     display: grid;
     grid-gap: 2rem;
@@ -10,5 +32,11 @@
     }
     a {
         text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.work-hero-section {
+        grid-template-columns: 1fr 1fr; 
     }
 }
