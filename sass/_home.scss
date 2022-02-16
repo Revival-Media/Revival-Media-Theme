@@ -14,16 +14,24 @@
     }
 }
 /* Services section styles */
+.home-services-block {
+    padding: 3rem;
+}
 .services-card {
+    h3.our-services-title {
+        padding-bottom: 1.5rem;
+    }
     a.rev-button {
-        margin-bottom: 3rem;
+        padding-top: 1rem;
     }
     .flex-wrap {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .services-wrap {
-        display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3rem 2rem;
-        margin-left: 1rem;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 2rem 2rem;
+        margin-top: 2rem;
         .flex-wrap {
             flex-direction: row;
             align-items: center;

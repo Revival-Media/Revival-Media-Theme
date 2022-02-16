@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <section class="site-width">
-        <h1 style="padding-bottom: 2rem;">
-            We are <span class="grad-text">Revival Media</span> 👋<br>
+        <h1 style="padding-bottom: .5rem;">
+            We're <span class="grad-text">Revival Media</span> 👋<br>
         </h1>
         <h2 style="max-width: 31ch; padding-bottom: 0rem; margin-bottom: -1.5rem;">
-            Believers in brand, masters of design and connoisseurs of all things digital.   
+            Brand builders, design experts and digital specialists.   
         </h2>
         <a class="rev-button" style="margin-top: 4rem;">Learn About Us</a>
 </section>
@@ -75,15 +75,17 @@
 </section>
 <section class="site-width">
     <div class="rev-card services-card rev-padding">
-        <h3 class="grad-text">Our services</h3>
+        <h3 class="grad-text" class="our-services-title">Our services</h3>
         <h2 style="max-width: 44ch;">
             Our integrated <span class="grad-text">web, social, print and digital</span> services make brands work for business. 
         </h2>
         <a class="rev-button">Learn More</a>
+    </div>
+    <div class="services-card">
         <div class="services-wrap">
-            <div class="home-services-block">
+            <div class="home-services-block rev-card">
                 <div class="flex-wrap">
-                    <img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/magnify-icon.svg'; ?>" alt="Strategy">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/imgs/magnify-icon.svg'; ?>" alt="Strategy">
                     <h3 style="margin-right: auto; margin-left: 2rem;">Strategy</h3>
                 </div>
                 <ul style="margin-top: 2rem; line-height: 2.5rem">
@@ -93,9 +95,9 @@
                     <li class="rev-bullet"><span>Brand driven proposals</span></li>
                 </ul>
             </div>
-            <div class="home-services-block">
+            <div class="home-services-block rev-card">
                 <div class="flex-wrap">
-                    <img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-icon.svg'; ?>" alt="Brand">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-icon.svg'; ?>" alt="Brand" style="transform: scale(1.12);">
                     <h3 style="margin-right: auto; margin-left: 2rem;">Brand</h3>
                 </div>
                 <ul style="margin-top: 2rem; line-height: 2.5rem">
@@ -105,9 +107,9 @@
                     <li class="rev-bullet"><span>Pixel perfect logos</span></li>
                 </ul>
             </div>
-            <div class="home-services-block">
+            <div class="home-services-block rev-card">
                 <div class="flex-wrap">
-                    <img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/digital-icon.svg'; ?>" alt="Digital">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/imgs/digital-icon.svg'; ?>" alt="Digital">
                     <h3 style="margin-right: auto; margin-left: 2rem;">Digital</h3>
                 </div>
                 <ul style="margin-top: 2rem; line-height: 2.5rem">
@@ -117,9 +119,9 @@
                     <li class="rev-bullet"><span>Security and maintenance</span></li>
                 </ul>
             </div>
-            <div class="home-services-block">
+            <div class="home-services-block rev-card">
                 <div class="flex-wrap">
-                    <img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Strategy">
+                    <img  src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print" style="transform: scale(0.95);">
                     <h3 style="margin-right: auto; margin-left: 2rem;">Print</h3>
                 </div>
                 <ul style="margin-top: 2rem; line-height: 2.5rem">
@@ -137,13 +139,13 @@
         <div class="rev-card rev-padding hp-img-1"></div>
         <div class="card-image-wrap">
             <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development</span>.</h3>
-            <a class="rev-button">View Projects</a>
+            <a href="/work" class="rev-button">View Projects</a>
         </div>
     </div>
     <div class="image-text-wrap card-switch">
         <div style="text-align: right;" class="card-image-wrap">
             <h3><span class="grad-text">Wordpress sites</span> to showcase your business and boost online enagement.</h3>
-            <a class="rev-button">View Projects</a>
+            <a href="/work" class="rev-button">View Projects</a>
         </div>
         <div class="rev-card rev-padding hp-img-2"></div>
     </div>
@@ -151,7 +153,7 @@
         <div class="rev-card rev-padding hp-img-3"></div>
         <div class="card-image-wrap">
             <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands</span>.</h3>
-            <a class="rev-button">View Projects</a>
+            <a href="/work" class="rev-button">View Projects</a>
         </div>
     </div>
 </section>
