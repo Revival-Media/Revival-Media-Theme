@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<!-- Need JQuery on this page -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!-- Get post meta fields -->
 <?php 
     // Get Project Name
@@ -43,23 +46,43 @@
 </section>
 <!-- This section is only displayed if the project's mobile-screenshot metafield is blank -->
 <section class="web-screenshot-section site-width" style="display: <?php if (empty($mobilescreenshot)) { echo none; } else { echo grid; } ?>;">
-    <div class="screen-wrap" style="height: 600px; overflow: hidden;">
-        <div class="screen-ui">
-            <div class="red screen-ui-btn"></div>
-            <div class="yellow screen-ui-btn"></div>
-            <div class="green screen-ui-btn"></div>
+    <div class="close-scroll rev-button">Close scrolling</div>
+    <h2 style="margin-top: 1.5rem;">Interactive preview</h2>
+    <p style="margin-bottom: 2rem;">Click the screenshots below to scroll through an interactive preview of the final site. <a href="<?php echo $weblink ?>" target="_blank">Click here to see it in action.</a></p>
+    <div class="web-screenshot-section-inner">
+        <div class="screen-wrap scrollable" style="height: 600px; overflow: hidden;">
+            <div class="screen-ui">
+                <div class="red screen-ui-btn"></div>
+                <div class="yellow screen-ui-btn"></div>
+                <div class="green screen-ui-btn"></div>
+            </div>
+            <div style="overflow-y: scroll; height: 100%;">
+                <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktopscreenshot; ?>">
+            </div>
         </div>
-        <div style="overflow-y: scroll; height: 100%;">
-            <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktopscreenshot; ?>">
+        <div class="mob-screen-wrap screen-wrap scrollable" style="height: 600px; overflow: hidden; border-radius: 1.5rem;">
+            <div class="mob-screen-ui screen-ui">
+            </div>
+            <div style="overflow-y: scroll; height: 100%;">
+                <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobilescreenshot; ?>">
+            </div>
         </div>
     </div>
-    <div class="mob-screen-wrap screen-wrap" style="scroll; height: 600px; overflow: hidden; border-radius: 1.5rem;">
-        <div class="mob-screen-ui screen-ui">
-        </div>
-        <div style="overflow-y: scroll; height: 100%;">
-            <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobilescreenshot; ?>">
-        </div>
-    </div>
+    <!-- On-click scrolling script -->
+    <script>
+        $(function() {                                  //run when the DOM is ready
+            $(".scrollable").click(function() {         //target class
+                $(".scrollable").addClass("active");    //add the class to the selected element
+                $(".close-scroll").addClass("visible"); 
+            });
+        });
+        $(function() {                                  //run when the DOM is ready
+            $(".close-scroll").click(function() {         //target class
+                $(".scrollable").removeClass("active");    //add the class to the clicked element
+                $(".close-scroll").removeClass("visible");    //add the class to the clicked element
+            });
+        });
+    </script>
 </section>
 <section class="feature-section site-width">
     <div class="image-text-wrap" style="display: <?php if (empty($feature1)) { echo none; } else { echo flex; } ?>;">
