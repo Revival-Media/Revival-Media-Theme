@@ -56,14 +56,14 @@
                 <div class="yellow screen-ui-btn"></div>
                 <div class="green screen-ui-btn"></div>
             </div>
-            <div style="overflow-y: scroll; height: 100%;">
+            <div style="overflow-y: scroll; height: 97.3%;">
                 <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktopscreenshot; ?>">
             </div>
         </div>
         <div class="mob-screen-wrap screen-wrap scrollable" style="height: 600px; overflow: hidden; border-radius: 1.5rem;">
             <div class="mob-screen-ui screen-ui">
             </div>
-            <div style="overflow-y: scroll; height: 100%;">
+            <div style="overflow-y: scroll; height: 581px;">
                 <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobilescreenshot; ?>">
             </div>
         </div>
@@ -78,8 +78,8 @@
         });
         $(function() {                                  //run when the DOM is ready
             $(".close-scroll").click(function() {         //target class
-                $(".scrollable").removeClass("active");    //add the class to the clicked element
-                $(".close-scroll").removeClass("visible");    //add the class to the clicked element
+                $(".scrollable").removeClass("active");    //remove the class to the clicked element
+                $(".close-scroll").removeClass("visible");    //remove the class to the clicked element
             });
         });
     </script>
