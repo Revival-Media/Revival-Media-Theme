@@ -220,7 +220,45 @@ function create_projects() {
 }
 add_action( 'init', 'create_projects' );
 
-
-
 /* stops wp scaling down imags */
 add_filter( 'big_image_size_threshold', '__return_false' );
+
+/* Work page category function */
+add_action('wp_ajax_myfilter', 'misha_filter_function'); // wp_ajax_{ACTION HERE} 
+add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
+
+function misha_filter_function(){
+	$args = array(
+		'post_type' => 'projects',
+		'orderby'   => 'rand'
+	);
+	// for taxonomies / categories
+	if( isset( $_POST['categoryfilter'] ) )
+		$args['tax_query'] = array(
+			array(
+				'taxonomy' => 'category',
+				'field' => 'id',
+				'terms' => $_POST['categoryfilter']
+			)
+		);
+	if ( empty( $_POST['categoryfilter'] ) ) {
+		$args = array(
+			'post_type' => 'projects',
+			'orderby'   => 'rand'
+		);
+	}
+
+	$query = new WP_Query( $args );
+	
+	if( $query->have_posts() ) :
+		while( $query->have_posts() ): $query->the_post();
+			 // Display the Project Title and Client with Hyperlink
+        	include('template-parts/project-card.php');
+		endwhile;
+		wp_reset_postdata();
+	else :
+		echo 'No posts found';
+	endif;
+	
+	die();
+}
