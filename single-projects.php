@@ -38,7 +38,7 @@
 </section>
 <section class="site-width top-text-section">
     <div class="top-text-wrap">
-        <h3><span class="grad-text">The Brief: </span><?php echo $topText; ?></h3>
+        <h3><span class="grad-text">The Brief:</span><br><?php echo $topText; ?></h3>
     </div>
 </section>
 <!-- This section is only displayed if the project's mobile-screenshot metafield is blank -->
@@ -68,7 +68,7 @@
             <h4><?php echo $feature1; ?></h4>
         </div>
     </div>
-    <div class="image-text-wrap card-switch" style="display: <?php if (empty($feature1)) { echo none; } else { echo flex; } ?>;">
+    <div class="image-text-wrap card-switch" style="display: <?php if (empty($feature2)) { echo none; } else { echo flex; } ?>;">
         <div style="text-align: right;" class="card-image-wrap">
             <h4><?php echo $feature2; ?></h4>
         </div>
