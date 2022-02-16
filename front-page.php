@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <section class="site-width">
-        <h1 style="padding-bottom: .5rem;">
+        <h1 style="padding-bottom: 1.5rem;">
             We're <span class="grad-text">Revival Media</span> 👋<br>
         </h1>
-        <h2 style="max-width: 31ch; padding-bottom: 0rem; margin-bottom: -1.5rem;">
+        <h2 style="max-width: 31ch; padding-bottom: 0rem; margin-bottom: 0;">
             Brand builders, design experts and digital specialists.   
         </h2>
-        <a class="rev-button" style="margin-top: 4rem;">Learn About Us</a>
+        <a class="rev-button" style="margin-top: 3rem;">Learn About Us</a>
 </section>
 <?php 
     // Define Query Parameters
@@ -58,14 +58,31 @@
                 },
                 1309: {
                     perView: 2,
+                    peek: 75
+                },
+                1150: {
+                    perView: 2,
+                    peek: 25
+                },
+                991: {
+                    perView: 2,
+                    peek: 25
+                },
+                700: {
+                    perView: 1,
+                    peek: 125
+                },
+                600: {
+                    perView: 1,
+                    peek: 75
+                },
+                500: {
+                    perView: 1,
                     peek: 50
                 },
-                800: {
+                400: {
                     perView: 1,
-                    peek: 100
-                },
-                575: {
-                    perView: 1,
+                    gap: 15,
                     peek: 25
                 }
             }
@@ -104,7 +121,7 @@
                     <li class="rev-bullet"><span>Powerful brand systems</span></li>
                     <li class="rev-bullet"><span>Graphic design</span></li>
                     <li class="rev-bullet"><span>Brand voice and copywriting</span></li>
-                    <li class="rev-bullet"><span>Pixel perfect logos</span></li>
+                    <li class="rev-bullet"><span>Pixel-perfect logos</span></li>
                 </ul>
             </div>
             <div class="home-services-block rev-card">
