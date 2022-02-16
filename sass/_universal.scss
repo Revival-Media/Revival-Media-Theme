@@ -283,7 +283,7 @@ input, textarea {
     border: .1rem solid $grey !important;
     transition: outline 150ms ease, border 150ms ease;
 }
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     border: .1rem solid $pink !important;
     outline: .1rem solid $pink !important;
 }
@@ -314,10 +314,15 @@ label {
 select {
     border-radius: $rev-radius;
     border: .2rem solid $grey;
-    padding: 1.5rem 2rem;
+    padding: 1.7rem 2rem 1.5rem;
     margin-top: 1rem;
     width: 100%;
     font-weight: bold;
+    appearance: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: 0.1rem solid transparent;
+    outline: 0.1rem solid transparent;
 }
 @media screen and (min-width: $xx) {
     .hf-form .hf-fields-wrap {
