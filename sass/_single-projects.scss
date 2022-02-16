@@ -10,40 +10,59 @@
             flex-direction: column;
             justify-content: end;
             min-height: 60vh;
+            padding-bottom: 5rem;
         }
         .proj-hero-button-wrap {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
             h1 {
                 padding-bottom: 0;
             }
             .rev-button {
-                height: fit-content;
+                margin-top: 2.5rem;
             }
         }
     }
 }
 .top-text-section {
     padding-bottom: 0;
+    padding-top: 7.5rem;
+    @media screen and (max-width: $md) {
+        padding-top: 5rem;
+    }
     .top-text-wrap {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem 4rem;
+        line-height: 4.5rem;
+        
+        @media screen and (max-width: $lg) {
+            line-height: 4rem;
+        }
         @media screen and (min-width: $md) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
     }
 }
-.web-iframes-section {
-    display: grid;
+.web-screenshot-section {
+    // display: grid; This declaration is controlled with an inline style
     grid-gap: 2rem;
     grid-template-columns: 1fr;
+    margin-top: 7.5rem;
+    padding-bottom: 0rem;
     @media screen and (min-width: $md) {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 3fr 1fr;
     }
-    iframe {
-        border-radius: 0 0 $rev-radius $rev-radius;
+    .screen-wrap {
+        margin: 0;
+        .screen-ui {
+            border-radius: 0.5rem 0.5rem 0 0 !important;
+            .screen-ui-btn {
+                display: block !important;
+            }
+        }
+        .screen-ui.mob-screen-ui {
+            border-radius: 1.5rem 1.5rem 0 0 !important;
+        }
     }
 }
 .feature-section {
@@ -52,6 +71,13 @@
     grid-template-rows: 1fr 1fr 1fr; 
     align-items: center; 
     gap: 7.5rem 5rem;
+    margin-top: 7.5rem;
+
+    h4 {
+        font-weight: normal;
+        line-height: 3.1rem;
+    }
+
     .image-text-wrap {
         display: flex;
         flex-direction: row;
@@ -64,6 +90,7 @@
     }
     .card-image-wrap {
         margin-left: 2rem;
+        width: 100%;
     }
     .card-switch {
         .rev-card {
@@ -79,14 +106,19 @@
     }
 }
 @media screen and (max-width: $md) {
+    
     .feature-section {
-        gap: 5rem;
+        gap: 3rem;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 5rem;
     }
+
     .feature-section .image-text-wrap {
-        margin-bottom: 2.5rem;
         flex-direction: column;
-        h3 {
-            margin-top: 2.5rem;
+        h4 {
+            margin-top: 5rem;
+            line-height: 2.8rem;
+            
         }
         .card-image, .rev-card, .card-image-wrap {
             margin: 0;
@@ -107,5 +139,14 @@
     max-width: fit-content;
     .glide__track {
         overflow: visible;
+        li {
+            height: auto;
+            .hero-card-link-wrap {
+                height: 100%;
+                .hero-card {
+                    height: 100%;
+                }
+            }
+        }
     }
 }

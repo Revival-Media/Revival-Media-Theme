@@ -71,7 +71,6 @@ html {
 /* Type styles */
 a {
     color: $pink;
-    cursor: pointer;
 }
 a:not(.rev-button):hover {
     font-weight: bold;
@@ -120,7 +119,7 @@ h6 {
 }
 @media screen and (min-width: $xs) {
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         padding-bottom: 2rem;
     }
     h2 {
@@ -146,7 +145,7 @@ h6 {
 }
 @media screen and (min-width: $lg) {
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         padding-bottom: 2.5rem;
     }
     h2 {
