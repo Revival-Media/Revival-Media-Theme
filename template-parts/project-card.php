@@ -14,7 +14,7 @@
     //Get Mobile Screenshot
     $mobile = get_post_meta(get_the_ID(), 'mobile', true);
 ?>
-<div class="hero-card-link-wrap magic-hover">
+<div class="hero-card-link-wrap">
     <a href="<?php the_permalink() ?>">
         <div style="background: <?php echo $background; ?>;" class="rev-card hero-card <?php echo $cats[0]->slug; ?>" id="card-<?php echo $post->ID; ?>">
             <div class="rev-padding">

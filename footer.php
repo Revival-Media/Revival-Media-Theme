@@ -86,18 +86,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<!-- magicmouse.js import and script. -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/magic_mouse.js'; ?>"></script>
-<script type="text/javascript">
-	options = {
-	"cursorOuter": "circle-basic",
-	"hoverEffect": "pointer-blur",
-	"hoverItemMove": false,
-	"defaultCursor": false,
-	"outerWidth": 40,
-	"outerHeight": 40
-	};
-	magicMouse(options);
-</script>
+
 </body>
 </html>
