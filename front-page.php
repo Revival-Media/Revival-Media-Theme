@@ -70,23 +70,10 @@
                     perView: 2,
                     peek: 25
                 },
-                700: {
-                    perView: 1,
-                    peek: 125
-                },
-                600: {
-                    perView: 1,
-                    peek: 75
-                },
                 500: {
                     perView: 1,
-                    peek: 50
+                    peek: 15
                 },
-                400: {
-                    perView: 1,
-                    gap: 15,
-                    peek: 25
-                }
             }
         }).mount()
     </script>
@@ -239,15 +226,15 @@
     <script>
         var glide = new Glide('.client-glide', {
             type: 'carousel',
-            perView: 1,
-            perTouch: 1,
+            perView: 2,
+            perTouch: 2,
             focusAt: 0,
             gap: 20,
             autoplay: 8000,
             animationDuration: 150,
             peek: 200,
             breakpoints: {
-                1750: {
+                2080: {
                     peek: 150,
                     perView: 1,
                     perTouch: 1
@@ -258,11 +245,11 @@
                 },
                 767: {
                     perView: 1,
-                    peek: 50
+                    peek: 30
                 },
                 575: {
                     perView: 1,
-                    peek: 20
+                    peek: 15
                 }
             }
         }).mount()
