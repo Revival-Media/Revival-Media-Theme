@@ -1,11 +1,16 @@
 <?php get_header(); ?>
 
-<section class="site-width services-hero-section">
-        <h1>
-            <span class="grad-text">Our services</span> build brands that connect with consumers and  <span class="grad-text">drives growth</span> 🚀
-        </h1>
+<section class="site-width services-hero-section" style="position: relative;">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(345deg);">
+    <h1>
+        <span class="grad-text">Our services</span> build brands that connect with consumers and  <span class="grad-text">drives growth</span> 🚀
+    </h1>
 </section>
-<section class="site-width services-block">
+<section class="site-width services-block" style="position: relative;">
+<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: -2%; top: -4%;">
+<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; left: -2%; top: 30%;">
+<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-4.svg'; ?>" style="height: 40rem; right: -10%; top: 55%;">
+<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: 30%; bottom: 2%;">
     <div class="rev-card rev-padding">
         <div class="service-img development-service"></div>
         <div class="service-text">

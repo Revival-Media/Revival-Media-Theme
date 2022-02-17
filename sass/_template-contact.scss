@@ -1,17 +1,20 @@
 .rev-card.contact-card {
     display: flex;
     padding: 0; 
-    overflow: hidden;
     .contact-card-text {
         padding: 5rem;
         width: 100%;
-        @media screen and (min-width: $lg) {
+        @media screen and (min-width: 993px) {
             width: 50%;
         }
     }
     .contact-template-img {
         object-fit: cover;
         width: 50%;
+        border-radius: 0 0 $rev-radius $rev-radius;
+        @media screen and (min-width: 993px) {
+            border-radius: 0 $rev-radius $rev-radius 0 !important;
+        }
     }
 }
 .contact-form.contact-form-template {

@@ -30,16 +30,16 @@
 
 <section class="proj-hero-wrap">
     <div class="proj-hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url(<?php echo get_the_post_thumbnail_url(); ?>);" id="card-<?php echo $post->ID; ?>">
-        <div class="site-width proj-hero-text">
-            <h4><?php echo $clientName; ?></h4>
-            <div class="proj-hero-button-wrap">
+        <div class="site-width proj-hero-text" style="position: relative;">
+            <h4 style="z-index: 1;"><?php echo $clientName; ?></h4>
+            <div style="z-index: 1;" class="proj-hero-button-wrap">
                 <h1><?php echo $projectName; ?></h1>
                 <a target="_blank" rel="external" style="display: <?php if (empty($weblink)) { echo none; } else { echo block; } ?>;" class="rev-button" href="<?php echo $weblink ?>">View Website</a>
             </div>
         </div>
     </div>
 </section>
-<section class="site-width top-text-section">
+<section class="site-width top-text-section" style="z-index: 1; position: relative;">
     <div class="top-text-wrap">
         <h3><span class="grad-text">The Brief:</span><br><?php echo $topText; ?></h3>
     </div>
@@ -104,7 +104,7 @@
         </div>
     </div>
 </section>
-<?php get_template_part('template-parts/contact-form'); ?>
+
 <section class="site-width" style="padding-bottom: 3rem;">
     <h2>Some of our <span class="grad-text">other projects</span>.</h2>
 </section>
@@ -162,5 +162,7 @@
         }).mount()
     </script>
 </section>
+
+<?php get_template_part('template-parts/contact-form'); ?>
 
 <?php get_footer(); ?>

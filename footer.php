@@ -12,10 +12,11 @@
 ?>
 	</div> <!-- End of .page-content opened at the bottom of header.php -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer" style="position: relative;">
+		<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 42rem; left: 14%; top: -42%; transform: rotate(13deg);">
 		<div class="footer-wrap glass">
 			<div class="colour-bar"></div>
-			<div class="footer-container site-width">
+			<div class="footer-container site-width" style="position: relative;">
 				<a class="rm-logo-wrap" href="https://media.revival.solutions/"><img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/rm-logo.svg'; ?>" alt=Logo></a>
 				<div class="footer-info">
 					<div class="footer-1">

@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 
-<section class="site-width">
+<section class="site-width" style="position: relative;">
+        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -130px; transform: rotate(345deg);">
         <h1 style="padding-bottom: 1.5rem;">
-            We're <span class="grad-text">Revival Media</span> 👋<br>
+            We’re <span class="grad-text">Revival Media</span> 👋<br>
         </h1>
         <h2 style="max-width: 31ch; padding-bottom: 0rem; margin-bottom: 0;">
             Brand builders, design experts and digital specialists.   
         </h2>
         <a class="rev-button" style="margin-top: 3rem;">Learn About Us</a>
+        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 15rem; right: 3%; bottom: -20%;">
 </section>
 <?php 
     // Define Query Parameters
@@ -91,12 +93,14 @@
 
 </section>
 <section class="site-width">
-    <div class="rev-card services-card rev-padding">
+    <div class="rev-card services-card rev-padding" style="position: relative;">
+        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 26rem; left: -5%; top: -22%; transform: rotate(245deg);">
         <h3 class="grad-text" class="our-services-title">Our services</h3>
         <h2 style="max-width: 44ch;">
             Our integrated <span class="grad-text">web, social, print and digital</span> services make brands work for business. 
         </h2>
         <a class="rev-button">Learn More</a>
+        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -8%; bottom: -71%;">
     </div>
     <div class="services-card">
         <div class="services-wrap">
@@ -153,7 +157,9 @@
 </section>
 <section class="site-width card-text-section">
     <div class="image-text-wrap">
-        <div class="rev-card rev-padding hp-img-1"></div>
+        <div class="rev-card rev-padding hp-img-1" style="position: relative;">
+            <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -10%; top: -14.5%;">
+        </div>
         <div class="card-image-wrap">
             <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development</span>.</h3>
             <a href="/work" class="rev-button">View Projects</a>
@@ -164,7 +170,9 @@
             <h3><span class="grad-text">Wordpress sites</span> to showcase your business and boost online enagement.</h3>
             <a href="/work" class="rev-button">View Projects</a>
         </div>
-        <div class="rev-card rev-padding hp-img-2"></div>
+        <div class="rev-card rev-padding hp-img-2" style="position: relative;">
+            <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-1.svg'; ?>" style="height: 60rem; right: -45%; top: -58.5%; transform: rotate(345deg);">
+        </div>
     </div>
     <div class="image-text-wrap">
         <div class="rev-card rev-padding hp-img-3"></div>
@@ -231,8 +239,8 @@
     <script>
         var glide = new Glide('.client-glide', {
             type: 'carousel',
-            perView: 2,
-            perTouch: 2,
+            perView: 1,
+            perTouch: 1,
             focusAt: 0,
             gap: 20,
             autoplay: 8000,

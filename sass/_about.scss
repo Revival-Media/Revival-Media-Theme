@@ -48,7 +48,7 @@
 @media screen and (min-width: $md) {
     .about-hero-wrap {
         grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-        grid-template-rows: 18rem 5rem 5rem 20rem 5rem;
+        grid-template-rows: 23rem 5rem 5rem 20rem 5rem;
         grid-template-areas: "hr  hr  hr  .   ."
                              "p-1 .   .   p-4 p-4"
                              "p-1 p-2 .   p-4 p-4"
@@ -76,10 +76,10 @@
         }
     }
 }
-@media screen and (min-width: $lg) {
+@media screen and (min-width: 1200px) {
     .about-hero-wrap {
         grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-        grid-template-rows: 25rem 5rem 5rem 20rem 5rem;
+        grid-template-rows: 30rem 5rem 5rem 20rem 5rem;
         grid-template-areas: "hr  hr  hr  p-4 p-4"
                              "p-1 .   .   p-4 p-4"
                              "p-1 p-2 .   p-4 p-4"
@@ -175,10 +175,15 @@
 }
 
 /* Our tools section */
-
+.our-tools-section {
+    padding: 8rem 0 10rem !important;
+    @media screen and (max-width: 991px) {
+        padding: 0 0 6rem !important;
+    }
+}
 .tools-container {
     display: flex;
-    margin: 0 auto;
+    margin: 0 3rem;
     justify-content: center;
     flex-direction: column;
     @media screen and (min-width: $lg) {

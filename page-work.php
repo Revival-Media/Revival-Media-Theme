@@ -2,52 +2,57 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<section class="site-width work-hero-section" style="padding-bottom: 3rem;">
-        <h1 class="work-category-h1" style="padding-bottom: 0;">
-            <span class="grad-text">Our work</span> does<br>
-            all the talking 💪
-        </h1>
-        <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
-            <div class="drop-workaround">
-                <?php 
-                if( $terms = get_terms( array(
-                    'taxonomy'  => 'category',
-                    'post_type' => 'projects',
-                    'orderby'   => 'rand',
-                    'exclude' => 1
-                ) ) ) : 
-                    // if categories exist, display the dropdown
-                    echo '<select name="categoryfilter" class="work-category-dropdown"><option value="">All projects</option>';
-                    foreach ( $terms as $term ) :
-                        echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as an option value
-                    endforeach;
-                    echo '</select>';
-                endif;
-                ?>
-            </div>
-            <input type="hidden" name="action" value="myfilter">
-        </form>
-        <script> // Script that sends AJAX request and receives response
-            jQuery('.work-category-dropdown').on('change', function() {
-                $(this).closest('form').submit();
-            });
-            $(function($){
-                $('#filter').submit(function(){
-                    var filter = $('#filter');
-                    $.ajax({
-                        url:filter.attr('action'),
-                        data:filter.serialize(), // form data
-                        type:filter.attr('method'), // POST
-                        success:function(data){
-                            $('#response').html(data); // insert data
-                        }
-                    });
-                    return false;
+<section class="site-width work-hero-section" style="padding-bottom: 3rem; position: relative;">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(42deg);">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -5%; top: 53%;">
+    <h1 class="work-category-h1" style="padding-bottom: 0;">
+        <span class="grad-text">Our work</span> does<br>
+        all the talking 💪
+    </h1>
+    <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+        <div class="drop-workaround">
+            <?php 
+            if( $terms = get_terms( array(
+                'taxonomy'  => 'category',
+                'post_type' => 'projects',
+                'orderby'   => 'rand',
+                'exclude' => 1
+            ) ) ) : 
+                // if categories exist, display the dropdown
+                echo '<select name="categoryfilter" class="work-category-dropdown"><option value="">All projects</option>';
+                foreach ( $terms as $term ) :
+                    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as an option value
+                endforeach;
+                echo '</select>';
+            endif;
+            ?>
+        </div>
+        <input type="hidden" name="action" value="myfilter">
+    </form>
+    <script> // Script that sends AJAX request and receives response
+        jQuery('.work-category-dropdown').on('change', function() {
+            $(this).closest('form').submit();
+        });
+        $(function($){
+            $('#filter').submit(function(){
+                var filter = $('#filter');
+                $.ajax({
+                    url:filter.attr('action'),
+                    data:filter.serialize(), // form data
+                    type:filter.attr('method'), // POST
+                    success:function(data){
+                        $('#response').html(data); // insert data
+                    }
                 });
+                return false;
             });
-        </script>
+        });
+    </script>
 </section>
-<section id="response" class="work-grid-section site-width">
+<section id="response" class="work-grid-section site-width" style="position: relative;">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: -7%; top: 3%; transform: rotate(345deg);">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -4%; top: 35%;">
+    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 38rem; right: -14%; top: 52%; transform: rotate(352deg);">
     <?php 
         // Define Query Parameters
         $workArgs = array (

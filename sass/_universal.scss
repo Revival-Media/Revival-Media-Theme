@@ -18,7 +18,9 @@ html {
   ::selection {
     color: $pink;
   }
-
+#page {
+    overflow-x: hidden;
+}
 /* Site widths */
 .site-width {
     max-width: $xx;
@@ -356,4 +358,11 @@ select {
             margin-top: 2rem;
         }
     }
+}
+
+/* Blobs and grids */
+.rev-decore {
+    position: absolute;
+    z-index: -1 !important;
+    opacity: 75%;
 }
