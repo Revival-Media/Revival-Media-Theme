@@ -56,7 +56,7 @@
         <div class="service-text">
             <div class="flex-wrap">
                 <img style="transform: scale(0.7);" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print">
-                <h3 style="margin-right: auto; margin-left: 2rem;">Print and digital design</h3>
+                <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Print and digital design</h3>
             </div>
             <p>Good design is our foundation, be it digital or print. <a href="/work">View projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
@@ -116,7 +116,7 @@
         <div class="service-text">
             <div class="flex-wrap">
                 <img src="<?php echo get_template_directory_uri() . '/assets/imgs/security-icon.svg'; ?>" alt="Security">
-                <h3 style="margin-right: auto; margin-left: 2rem;">Maintenance and security</h3>
+                <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Maintenance and security</h3>
             </div>
             <p>A website is never finished, only improved. <a href="/work">View projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
