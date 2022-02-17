@@ -11,7 +11,7 @@
     .contact-template-img {
         object-fit: cover;
         width: 50%;
-        border-radius: 0 0 $rev-radius $rev-radius;
+        border-radius: $rev-radius $rev-radius 0 0;
         @media screen and (min-width: 993px) {
             border-radius: 0 $rev-radius $rev-radius 0 !important;
         }
@@ -35,10 +35,10 @@
 }
 @media screen and (max-width: $lg) {
     .rev-card.contact-card {
-        flex-direction: column;
+        flex-direction: column-reverse;
         .contact-template-img {
             width: 100%;
-            max-height: 30rem;
+            max-height: 40rem;
         }
     }
 }
