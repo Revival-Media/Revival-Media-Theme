@@ -30,8 +30,8 @@
         .proj-hero-text {
             display: flex;
             flex-direction: column;
-            justify-content: end;
-            min-height: 60vh;
+            justify-content: flex-end;
+            min-height: 50vh;
             padding-bottom: 5rem;
         }
         .proj-hero-button-wrap {
