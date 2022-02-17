@@ -18,10 +18,14 @@
         background-size: cover;
         width: 100%;
         height: 20rem;
-        @media screen and (min-width: $md) {
-            height: 30rem;
+    }
+
+    @media screen and (min-width: $md) {
+        .h3-line-end {
+            max-width: 12ch;
         }
     }
+    
 
     /* Service tile images */ 
 
