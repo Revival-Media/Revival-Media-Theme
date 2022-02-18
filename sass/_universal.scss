@@ -85,6 +85,10 @@ a:not(.rev-button):hover {
 p, a, label, input, li, textarea {
     font-size: 1.6rem;
 }
+label {
+    position: relative;
+    z-index: 1;
+}
 .small p,
 .small a {
     font-size: 1.4rem;
@@ -92,9 +96,13 @@ p, a, label, input, li, textarea {
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: 130%;
+    position: relative;
+    z-index: 1;
 }
 p, a {
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 h1 {
     font-size: 4rem;
@@ -181,6 +189,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     -webkit-text-fill-color: transparent;
     padding: 0.2rem 0;
     width: fit-content;
+    box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
 li {
