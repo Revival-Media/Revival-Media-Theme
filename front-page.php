@@ -8,7 +8,7 @@
         <h2 style="max-width: 31ch; padding-bottom: 0rem; margin-bottom: 0;">
             Brand builders, design experts and digital specialists.   
         </h2>
-        <a class="rev-button" style="margin-top: 3rem;">Learn About Us</a>
+        <a href="/about" class="rev-button" style="margin-top: 3rem;">Learn About Us</a>
         <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 15rem; right: 3%; bottom: -20%;">
 </section>
 <?php 
@@ -60,14 +60,14 @@
                 },
                 1309: {
                     perView: 2,
-                    peek: 75
+                    peek: 40
                 },
                 1150: {
                     perView: 2,
                     peek: 25
                 },
-                991: {
-                    perView: 2,
+                800: {
+                    perView: 1,
                     peek: 25
                 },
                 500: {

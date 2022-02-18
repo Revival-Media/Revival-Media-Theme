@@ -229,8 +229,9 @@ add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
 
 function misha_filter_function(){
 	$args = array(
-		'post_type' => 'projects',
-		'orderby'   => 'rand'
+		'post_type' 		=> 'projects',
+		'posts_per_page'    => -1,
+		'orderby'  			=> 'rand'
 	);
 	// for taxonomies / categories
 	if( isset( $_POST['categoryfilter'] ) )
@@ -238,13 +239,15 @@ function misha_filter_function(){
 			array(
 				'taxonomy' => 'category',
 				'field' => 'id',
-				'terms' => $_POST['categoryfilter']
+				'terms' => $_POST['categoryfilter'],
+				'posts_per_page'    => -1
 			)
 		);
 	if ( empty( $_POST['categoryfilter'] ) ) {
 		$args = array(
 			'post_type' => 'projects',
-			'orderby'   => 'rand'
+			'orderby'   => 'rand',
+			'posts_per_page'    => -1
 		);
 	}
 

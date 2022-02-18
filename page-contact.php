@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="site-width contact-hero-wrap">
+<section class="site-width contact-hero-wrap" style="position: relative;">
     <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 70%; top: -15rem; transform: rotate(29deg);">
     <h1 style="padding-bottom: 2rem;">
         <span class="grad-text">Like what you see?</span><br>

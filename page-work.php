@@ -13,13 +13,13 @@
         <div class="drop-workaround">
             <?php 
             if( $terms = get_terms( array(
-                'taxonomy'  => 'category',
-                'post_type' => 'projects',
-                'orderby'   => 'rand',
-                'exclude' => 1
+                'taxonomy'          => 'category',
+                'post_type'         => 'projects',
+                'orderby'           => 'rand',
+                'exclude'           => 1
             ) ) ) : 
                 // if categories exist, display the dropdown
-                echo '<select name="categoryfilter" class="work-category-dropdown"><option value="">All projects</option>';
+                echo '<select name="categoryfilter" class="work-category-dropdown"><option value="">All Projects</option>';
                 foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as an option value
                 endforeach;
@@ -49,7 +49,7 @@
         });
     </script>
 </section>
-<section id="response" class="work-grid-section site-width" style="position: relative;">
+<section id="response" class="work-grid-section site-width" style="z-index: 1; position: relative;">
     <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: -7%; top: 3%; transform: rotate(345deg);">
     <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -4%; top: 35%;">
     <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 38rem; right: -14%; top: 52%; transform: rotate(352deg);">
@@ -57,7 +57,8 @@
         // Define Query Parameters
         $workArgs = array (
             'post_type' => 'projects',
-            'orderby'   => 'rand'
+            'orderby'   => 'rand',
+            'posts_per_page'    => -1
         );
         $work_posts = new WP_Query( $workArgs );
     ?>

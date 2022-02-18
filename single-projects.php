@@ -108,7 +108,7 @@
 <section class="site-width" style="padding-bottom: 3rem;">
     <h2>Some of our <span class="grad-text">other projects</span>.</h2>
 </section>
-<section class="related-projects-section site-width">
+<section class="related-projects-section site-width" style="z-index: 1; position: relative;">
     <div class="project-page-glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">

@@ -78,14 +78,14 @@
         transition: opacity 150ms ease, right 1ms ease 1000ms;
         position: absolute;
         width: 100vw;
-        height: calc(100vh - 145px);
+        height: calc(100vh - 9rem);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         z-index: -1;
         li {
-            padding: 2rem 0;
+            padding: 1.5rem 0;
             a {
                 font-size: 4.5rem;
                 position: relative;

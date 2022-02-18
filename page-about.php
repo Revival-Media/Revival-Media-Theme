@@ -74,7 +74,7 @@
             <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 25rem; right: -14%; top: 63%; transform: rotate(215deg);">
             <h1>Our tools 🛠️</h1>
             <p>We use a suite of modern tools to help put our clients on the map and keep them there.</p>
-            <a href="<?php echo get_template_directory_uri() . '/work'; ?>" class="rev-button">View them in action</a>
+            <a href="<?php echo get_template_directory_uri() . '/work'; ?>" style="z-index: 3;" class="rev-button">View them in action</a>
         </div>
         <div class="tools-bottom">
             <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-l-mob.png'; ?>" alt="">

@@ -8,6 +8,8 @@
     }
     .glide__track {
         overflow: visible !important;
+        z-index: 1;
+        position: relative;
         .glide__slide {
             height: auto;
         }
@@ -172,6 +174,7 @@
         a {
             padding-right: 1rem;
             text-decoration: underline;
+            padding-bottom: 0;
         }
     }
     .client-img {

@@ -32,7 +32,7 @@
 							?>
 						</div>
 						<div class="footer-col-two">
-							<a href="tel:+44-(0)-116-270-2377">
+							<a href="tel:+44-(0)-116-270-2377" target="_blank">
 								<div class="contact-detail">
 									<img src="<?php echo get_template_directory_uri() . '/assets/imgs/phone.svg'; ?>" alt="Facebook">
 									<p>+44 (0) 116 270 2377</p>
@@ -46,9 +46,9 @@
 							</a>
 								
 							<div class="social-links">
-								<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/imgs/facebook.svg'; ?>" alt="Facebook"></a>
-								<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/imgs/linkedin.svg'; ?>" alt="LinkedIn"></a>
-								<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/imgs/instagram.svg'; ?>" alt="Instagram"></a>
+								<!-- <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/imgs/facebook.svg'; ?>" alt="Facebook"></a> -->
+								<a href="https://www.linkedin.com/company/revivalmedia/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/assets/imgs/linkedin.svg'; ?>" alt="LinkedIn"></a>
+								<!-- <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/imgs/instagram.svg'; ?>" alt="Instagram"></a> -->
 							</div>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 							<a href="">Privacy Policy</a>
 							<a href="">Terms & Conditions</a>
 						</div>
-						<p>© 2022 Revival Solutions Group</p>
+						<p>© <?php $year = date("Y"); echo $year;?>  Revival Solutions Group</p>
 					</div>
 				</div>
 				
@@ -86,6 +86,24 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+			
+<script>
+	
+	const options = {
+		licenseKey: '5A1A9AC9-1C294E26-91F21DAA-85539B33',
+		focusableElements: '[data-blobity], a:not([data-no-blobity]), [data-blobity-tooltip], a, .rev-button, input, textarea, .drop-workaround',
+		color: '#ED1F78',
+		opacity: 0.2,
+		zIndex: 0,
+		size: 50,
+		dotColor: '#ED1F78',
+		focusableElementsOffsetX: 10,
+		focusableElementsOffsetY: 9,
+		radius: 21
+	};
+	new Blobity(options);
+
+</script>
 
 </body>
 </html>
