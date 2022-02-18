@@ -72,12 +72,11 @@
 			<div class="bottom-bar site-width">
 				<a href="https://revivalsolutions.co.uk" target="_blank">
 					<div class="rsg-btm-bar">
-						<p><img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Facebook">Part of the <span>Revival Solutions Group</span></p>
+					<img src="<?php echo get_template_directory_uri() . '/assets/imgs/rsg-icon.svg'; ?>" alt="Revival Solutions Group"><p>Part of the <span>Revival Solutions Group</span></p>
 					</div>
 				</a>
 				<div class="btm-bar-menu">
 					<a href="https://revivalresourcing.co.uk" target="_blank"><p>Resourcing</p></a>
-					<a href="" target="_blank"><p>Capital</p></a>
 					<a href="" target="_blank"><p>Connect</p></a>
 				</div>
 			</div>

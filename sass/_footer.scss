@@ -166,8 +166,11 @@
             img {
                 padding-right: 1rem;
             }
-            span {
-                font-weight: bold;
+            p {
+                padding-top: 0.2rem;
+                span {
+                    font-weight: bold;
+                }
             }
         }
         .btm-bar-menu {
@@ -185,8 +188,11 @@
                 color: $white;
                 text-decoration: none;
                 @media screen and (min-width: $sm) {
-                    &:not(:first-child):not(:last-child) {
+                    /*&:not(:first-child):not(:last-child) {
                         padding: 0rem 1.5rem;
+                    }*/
+                    &:last-child {
+                        padding-left: 3rem;
                     }
                 }
                 
