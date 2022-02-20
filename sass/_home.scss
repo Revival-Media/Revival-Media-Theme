@@ -116,13 +116,14 @@
 
 /* Images for card text sections */
 .hp-img-1 {
-    background-image: url(assets/imgs/shopify-mock.jpg);
+    background-image: url(assets/imgs/hp-img-1.jpg);
     background-size: cover;
     background-position: center;
 }
 .hp-img-2 {
-    background-image: url(assets/imgs/wordpress.jpg);
+    background-image: url(assets/imgs/hp-img-2.jpg);
     background-size: cover;
+    background-position: center;
 }   
 .hp-img-3{
     background-image: url(assets/imgs/social-media.jpg);
@@ -146,6 +147,7 @@
     .glide__slides {
         display: flex;
         height: auto;
+        z-index: 1;
         .glide__slide {
             height: auto;
         }
