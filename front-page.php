@@ -46,7 +46,7 @@
         var glide = new Glide('.home-glide', {
             type: 'carousel',
             perView: 3,
-            perTouch: 3,
+            perTouch: 4,
             focusAt: 0,
             gap: 20,
             autoplay: 8000,
