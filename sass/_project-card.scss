@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     &:hover .screen-wrap {
         top: -1rem;
         transform-origin: bottom;
@@ -143,10 +142,3 @@
     }
 }
 
-#card-102 {
-    .screenshot-desktop {
-        margin: 0rem 1rem;
-        background-size: contain;
-        margin-bottom: 2rem;
-    }
-}
