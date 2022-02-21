@@ -1,5 +1,6 @@
 .footer-wrap {
-    // margin-top: 50px; (Not sure this style is needed.)
+    z-index: 1;
+    position: relative;
     .footer-container {
         display: flex;
         flex-direction: column;
