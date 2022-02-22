@@ -137,10 +137,6 @@ h6 {
         font-size: 3rem;
         padding-bottom: 1.5rem;
     }
-    h4 {
-        font-size: 1.76rem;
-        padding-bottom: 1rem;
-    }
     h5 {
         font-size: 1.5rem;
         padding-bottom: .5rem;
@@ -205,6 +201,8 @@ li.rev-bullet {
     list-style-type: disc;
     font-size: 1.5rem;
     margin-left: 16px;
+    z-index: 1;
+    position: relative;
 }
 li.rev-bullet span {
     font-size: 1.6rem;
@@ -306,6 +304,8 @@ label {
     width: 100%;
 }
 .hf-form {
+    position: relative;
+    z-index: 1;
     .rev-button {
         padding: 0;
         width: 100%;
