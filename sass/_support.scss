@@ -1,0 +1,39 @@
+#wpsc_tickets_container {
+    border-radius: 1.5rem !important;
+}
+#create_ticket_body {
+    border-radius: 1.5rem !important;
+}
+
+.wpsc-iso {
+    margin-top: 5rem;
+}
+
+
+.btn {
+    position: relative !important;
+    background: $purple !important;
+    color: $white !important;
+    z-index: 1 !important;
+    padding: 1.2rem 2rem 1.1rem 2rem !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    transition: background 150ms ease !important;
+    width: fit-content !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+.btn::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(220deg, $pink, transparent) !important;
+    z-index: -1 !important;
+    border-radius: 50px !important;
+}
+.btn:hover {
+    background: $pink !important;
+}
