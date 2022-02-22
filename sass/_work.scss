@@ -7,6 +7,7 @@ section.work-hero-section {
     position: relative;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    z-index: 1;
 }
 .drop-workaround::after {
     content: "";
