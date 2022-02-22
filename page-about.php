@@ -17,15 +17,15 @@
 <?php get_header(); ?>
 <!-- About hero section -->
 <section class="site-width" style="position: relative;">
-    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(29deg);">
+    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(29deg);">
     <div class="about-hero-wrap">
         <h1 class="about-hero">
             We craft unforgettable user
             experiences built upon our <span class="grad-text">
             passion for marketing</span> ❤️
         </h1>
-        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -5%; bottom: 2%;">
-        <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 32rem; right: -17%; bottom: 45%;">
+        <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -5%; bottom: 2%;">
+        <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 32rem; right: -17%; bottom: 45%;">
         <div class="about-pic-1 about-pic" alt="" style="position: relative;"></div>
         <div class="about-pic-2 about-pic" alt=""></div>
         <div class="about-pic-3 about-pic" alt=""></div>
@@ -34,8 +34,8 @@
 </section>
 <!-- Meet the team section -->
 <section class="site-width" style="position: relative;">
-    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; right: -12%; top: -126px; transform: rotate(225deg);">
-    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -5%; top: 45%;">
+    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; right: -12%; top: -126px; transform: rotate(225deg);">
+    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -5%; top: 45%;">
     <h2 style="max-width: 100%;"><span class="grad-text">Meet the team</span> that makes it happen.</h2>
     <div class="rev-team-wrap">
         <div class="team-card team-card-nb">
@@ -65,27 +65,27 @@
 <section class="site-width our-tools-section">
     <div class="tools-container">
         <div class="tools-top">
-            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-l-mob.png'; ?>" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-r-mob.png'; ?>" alt="">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-l-mob.png'; ?>" alt="">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-top-r-mob.png'; ?>" alt="">
         </div>
-        <img class="tools-left" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-left-dt.png'; ?>" alt="">
+        <img loading="lazy" class="tools-left" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-left-dt.png'; ?>" alt="">
         <div class="rev-card rev-padding our-tools-card" style="position: relative;">
-            <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-1.svg'; ?>" style="height: 38rem; left: -29%; top: -126px; transform: rotate(17deg);">
-            <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 25rem; right: -14%; top: 63%; transform: rotate(215deg);">
+            <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-1.svg'; ?>" style="height: 38rem; left: -29%; top: -126px; transform: rotate(17deg);">
+            <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 25rem; right: -14%; top: 63%; transform: rotate(215deg);">
             <h1>Our tools 🛠️</h1>
             <p>We use a suite of modern tools to help put our clients on the map and keep them there.</p>
             <a href="<?php echo get_template_directory_uri() . '/work'; ?>" style="z-index: 3;" class="rev-button">View them in action</a>
         </div>
         <div class="tools-bottom">
-            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-l-mob.png'; ?>" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-r-mob.png'; ?>" alt="">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-l-mob.png'; ?>" alt="">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-btm-r-mob.png'; ?>" alt="">
         </div>
-        <img class="tools-right" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-right-dt.png'; ?>" alt="">
+        <img loading="lazy" class="tools-right" src="<?php echo get_template_directory_uri() . '/assets/imgs/tools-right-dt.png'; ?>" alt="">
     </div>
 </section>
 <!-- Revival Group promo section -->
 <section class="site-width rev-group-wrap" style="position: relative;">
-    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 32rem; left: -8%; top: -21%;">
+    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 32rem; left: -8%; top: -21%;">
     <div class="rev-card rev-padding rev-group-card">
         <h2>
             Proud to be a part of the <span>Revival Solutions Group</span>

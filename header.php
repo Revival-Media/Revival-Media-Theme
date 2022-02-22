@@ -43,7 +43,7 @@
 		
 		<div class="header-wrap glass">
 			<div class="site-width header-container">
-				<a class="rm-logo-wrap" href="https://media.revival.solutions/"><img class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/rm-logo.svg'; ?>" alt="Logo"></a>
+				<a class="rm-logo-wrap" href="https://media.revival.solutions/"><img loading="lazy" class="rm-logo" src="<?php echo get_template_directory_uri() . '/assets/imgs/rm-logo.svg'; ?>" alt="Logo"></a>
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-label="Main Menu" aria-expanded="false">
 					<svg xmlns="http://www.w3.org/2000/svg" class="burger-icon" viewBox="0 0 100 56" width="40" height="40">

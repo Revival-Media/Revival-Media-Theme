@@ -1,21 +1,21 @@
 <?php get_header(); ?>
 
 <section class="site-width services-hero-section" style="position: relative;">
-    <img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(345deg);">
+    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(345deg);">
     <h1>
         <span class="grad-text">Our services</span> build brands that connect with consumers and  <span class="grad-text">drives growth</span> 🚀
     </h1>
 </section>
 <section class="site-width services-block" style="position: relative;">
-<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: -2%; top: -4%;">
-<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; left: -2%; top: 30%;">
-<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-4.svg'; ?>" style="height: 40rem; right: -10%; top: 55%;">
-<img class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: 30%; bottom: 2%;">
+<img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: -2%; top: -4%;">
+<img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; left: -2%; top: 30%;">
+<img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-4.svg'; ?>" style="height: 40rem; right: -10%; top: 55%;">
+<img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; right: 30%; bottom: 2%;">
     <div class="rev-card rev-padding">
         <div class="service-img development-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/web-dev-icon.svg'; ?>" alt="Development">
+                <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/web-dev-icon.svg'; ?>" alt="Development">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Web design and development</h3>
             </div>
             <p>We build first class Wordpress and Shopify sites for a wide range of clients and industries. <a href="/work">View projects.</a></p>
@@ -35,7 +35,7 @@
         <div class="service-img social-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/social-icon.svg'; ?>" alt="Social">
+                <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/social-icon.svg'; ?>" alt="Social">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Social media marketing</h3>
             </div>
             <p>Cut to the chase with our social media services, connecting consumers to the heart of your brand. <a href="/work">View projects.</a></p>
@@ -55,7 +55,7 @@
         <div class="service-img design-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img style="transform: scale(0.7);" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print">
+                <img loading="lazy" style="transform: scale(0.7);" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print">
                 <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Print and digital design</h3>
             </div>
             <p>Good design is our foundation, be it digital or print. <a href="/work">View projects.</a></p>
@@ -75,7 +75,7 @@
         <div class="service-img build-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-build-icon.svg'; ?>" alt="Brand">
+                <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-build-icon.svg'; ?>" alt="Brand">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Brand building</h3>
             </div>
             <p>We know a business's identity starts with their brand. <a href="/work">View projects.</a></p>
@@ -95,7 +95,7 @@
         <div class="service-img copywriting-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/copywriting-icon.svg'; ?>" alt="Copywriting">
+                <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/copywriting-icon.svg'; ?>" alt="Copywriting">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Brand voice and copywriting</h3>
             </div>
             <p>Establishing a unique voice in your industry is challenging, let us help. <a href="/work">View projects.</a></p>
@@ -115,7 +115,7 @@
         <div class="service-img security-service"></div>
         <div class="service-text">
             <div class="flex-wrap">
-                <img src="<?php echo get_template_directory_uri() . '/assets/imgs/security-icon.svg'; ?>" alt="Security">
+                <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/security-icon.svg'; ?>" alt="Security">
                 <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Maintenance and security</h3>
             </div>
             <p>A website is never finished, only improved. <a href="/work">View projects.</a></p>
