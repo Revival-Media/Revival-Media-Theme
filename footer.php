@@ -13,7 +13,7 @@
 	</div> <!-- End of .page-content opened at the bottom of header.php -->
 
 	<footer id="colophon" class="site-footer" style="position: relative;">
-		<img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 42rem; left: 14%; top: -42%; transform: rotate(13deg);">
+		<img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 42rem; left: 14%; top: -42%; transform: rotate(13deg);">
 		<div class="footer-wrap glass">
 			<div class="colour-bar"></div>
 			<div class="footer-container site-width" style="position: relative;">
@@ -26,7 +26,7 @@
 								wp_nav_menu(
 									array(
 										'theme_location' => 'menu-1',
-										'menu_id'        => 'primary-menu',
+										'menu_id'        => 'footer-menu',
 									)
 								);
 							?>
@@ -56,11 +56,10 @@
 					<div class="footer-2 small">
 						<div class="footer-address">
 							<p>Revival Media Ltd.</p>
-							<p>Parkway House Second Avenue,<br>Centrum One Hundred,<br>Burton-On-Trent,<br>England DE14 2WF</p>
+							<p>Parkway House, Second Avenue,<br>Centrum One Hundred,<br>Burton-On-Trent,<br>England DE14 2WF</p>
 						</div>
 						<div class="footer-links">
-							<a href="">Privacy Policy</a>
-							<a href="">Terms & Conditions</a>
+							<a href="/privacy-policy">Privacy Policy</a>
 						</div>
 						<p>© <?php $year = date("Y"); echo $year;?>  Revival Solutions Group</p>
 					</div>
@@ -77,12 +76,14 @@
 				</a>
 				<div class="btm-bar-menu">
 					<a href="https://revivalresourcing.co.uk" target="_blank"><p>Resourcing</p></a>
-					<a href="" target="_blank"><p>Connect</p></a>
+					<a href="https://revivalconnect.co.uk" target="_blank"><p>Connect</p></a>
 				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<?php wp_footer() ?>
 			
 <script>
 	
