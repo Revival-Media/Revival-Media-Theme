@@ -3,8 +3,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <section class="site-width work-hero-section" style="padding-bottom: 3rem; position: relative;">
-    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(42deg);">
-    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -5%; top: 53%;">
+    <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: 60%; top: -280px; transform: rotate(42deg);">
+    <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -5%; top: 53%;">
     <h1 class="work-category-h1" style="padding-bottom: 0;">
         <span class="grad-text">Our work</span> does<br>
         all the talking 💪
@@ -50,9 +50,9 @@
     </script>
 </section>
 <section id="response" class="work-grid-section site-width" style="z-index: 1; position: relative;">
-    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: -7%; top: 3%; transform: rotate(345deg);">
-    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -4%; top: 35%;">
-    <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 38rem; right: -14%; top: 52%; transform: rotate(352deg);">
+    <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: -7%; top: 3%; transform: rotate(345deg);">
+    <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -4%; top: 35%;">
+    <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 38rem; right: -14%; top: 52%; transform: rotate(352deg);">
     <?php 
         // Define Query Parameters
         $workArgs = array (

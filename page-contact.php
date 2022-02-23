@@ -17,7 +17,7 @@
     <div style="position: relative;">
         <img loading="lazy" class="rev-decore" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -35%; top: 5%;">
         <div class="rev-card rev-padding map-card">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9650.14647296181!2d-1.6691633!3d52.7946634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb57268bd240e64cf!2sRevival%20Media!5e0!3m2!1sen!2suk!4v1645098016949!5m2!1sen!2suk" width="100%" height="450" style="border:0; border-radius: 15px 15px 0 0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe loading="lazy" alt="A map of Revival Media's office location." src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9650.14647296181!2d-1.6691633!3d52.7946634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb57268bd240e64cf!2sRevival%20Media!5e0!3m2!1sen!2suk!4v1645098016949!5m2!1sen!2suk" width="100%" height="450" style="border:0; border-radius: 15px 15px 0 0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="address-wrap">
                 <h4><span class="grad-text">Our base camp</span></h4>
                 <h3>Parkway House,<br>
