@@ -11,21 +11,12 @@
     $clientName = get_post_meta(get_the_ID(), 'Client', true);
     //Get Top Text
     $topText = get_post_meta(get_the_ID(), 'top-text', true);
-    //Get Top Paragraph Text
-    $topTextP = get_post_meta(get_the_ID(), 'top-text-p', true);
     //Get Desktop Screenshot
     $desktopscreenshot = get_post_meta(get_the_ID(), 'desktop-screenshot', true);
     //Get Mobile Screenshot
     $mobilescreenshot = get_post_meta(get_the_ID(), 'mobile-screenshot', true);
     //Get Website Link
     $weblink = get_post_meta(get_the_ID(), 'web-link', true);
-
-    $feature1 = get_post_meta(get_the_ID(), 'feature1', true);
-    $feature2 = get_post_meta(get_the_ID(), 'feature2', true);
-    $feature3 = get_post_meta(get_the_ID(), 'feature3', true);
-    $featureimg1 = get_post_meta(get_the_ID(), 'feature-img1', true);
-    $featureimg2 = get_post_meta(get_the_ID(), 'feature-img2', true);
-    $featureimg3 = get_post_meta(get_the_ID(), 'feature-img3', true);
 ?>
 
 <section class="proj-hero-wrap">
@@ -44,8 +35,9 @@
         <h3><span class="grad-text">The Brief:</span><br><?php echo $topText; ?></h3>
     </div>
 </section>
+
 <!-- This section is only displayed if the project's mobile-screenshot metafield is blank -->
-<section class="web-screenshot-section site-width" style="display: <?php if (empty($mobilescreenshot)) { echo none; } else { echo grid; } ?>;">
+<!--<section class="web-screenshot-section site-width" style="display: <?php if (empty($mobilescreenshot)) { echo none; } else { echo grid; } ?>;">
     <div class="close-scroll rev-button">Close scrolling</div>
     <h2 style="margin-top: 1.5rem;">Interactive preview</h2>
     <p style="margin-bottom: 2rem;">Click the screenshots below to scroll through an interactive preview of the final site. <a href="<?php echo $weblink ?>" target="_blank">Click here to see it in action.</a></p>
@@ -57,19 +49,19 @@
                 <div class="green screen-ui-btn"></div>
             </div>
             <div style="overflow-y: scroll; height: 97.3%;">
-                <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktopscreenshot; ?>">
+                <img loading="lazy" style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $desktopscreenshot; ?>">
             </div>
         </div>
         <div class="mob-screen-wrap screen-wrap scrollable" style="height: 600px; overflow: hidden; border-radius: 1.5rem;">
             <div class="mob-screen-ui screen-ui">
             </div>
             <div style="overflow-y: scroll; height: 581px;">
-                <img style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobilescreenshot; ?>">
+                <img loading="lazy" style="width: 100%; overflow: hidden; object-fit: cover; object-position: top;" src="../<?php echo $mobilescreenshot; ?>">
             </div>
         </div>
     </div>
     <!-- On-click scrolling script -->
-    <script>
+    <!--<script>
         $(function() {                                  //run when the DOM is ready
             $(".scrollable").click(function() {         //target class
                 $(".scrollable").addClass("active");    //add the class to the selected element
@@ -83,26 +75,12 @@
             });
         });
     </script>
-</section>
-<section class="feature-section site-width">
-    <div class="image-text-wrap" style="display: <?php if (empty($feature1)) { echo none; } else { echo flex; } ?>;">
-        <div class="rev-card" style="background-image: url(../<?php echo $featureimg1; ?>); background-size: cover; background-position: center;"></div>
-        <div class="card-image-wrap">
-            <h4><?php echo $feature1; ?></h4>
-        </div>
-    </div>
-    <div class="image-text-wrap card-switch" style="display: <?php if (empty($feature2)) { echo none; } else { echo flex; } ?>;">
-        <div style="text-align: right;" class="card-image-wrap">
-            <h4><?php echo $feature2; ?></h4>
-        </div>
-        <div class="rev-card" style="background-image: url(../<?php echo $featureimg2; ?>); background-size: cover; background-position: center;"></div>
-    </div>
-    <div class="image-text-wrap" style="display: <?php if (empty($feature3)) { echo none; } else { echo flex; } ?>;">
-        <div class="rev-card" style="background-image: url(../<?php echo $featureimg3; ?>); background-size: cover; background-position: center;"></div>
-        <div class="card-image-wrap">
-            <h4><?php echo $feature3; ?></h4>
-        </div>
-    </div>
+</section>-->
+
+<section class="site-width gtnbrg-section" style="z-index: 1; position: relative;">
+    <?php
+		the_content();
+	?>
 </section>
 
 <section class="site-width" style="padding-bottom: 3rem;">
@@ -114,7 +92,12 @@
             <ul class="glide__slides">
                 <?php
                     // Define Query Parameters  
-                    $project_posts = new WP_Query( 'post_type=projects' );
+                    $projectPostArgs = array(
+                        'post_type'         => 'projects',
+                        'orderby'           => 'rand',
+                        'posts_per_page'    => -1
+                    );
+                    $project_posts = new WP_Query( $projectPostArgs );
 
                     // Start WP Query
                     while ($project_posts -> have_posts()) : $project_posts -> the_post(); 
