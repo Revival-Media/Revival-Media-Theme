@@ -112,7 +112,6 @@
     grid-template-areas: "nb"
                          "hf"
                          "jg"
-                         "an"
                          "ju";
     grid-gap: 2rem;
     .team-card {
@@ -154,8 +153,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "nb hf"
-                             "jg an"
-                             "ju ju";
+                             "jg ju";
     }
 }
 @media screen and (min-width: $lg) {
@@ -163,7 +161,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "nb hf jg"
-                             "an ju ju";         
+                             "ju ju ju";         
     }
 }
 @media screen and (min-width: $xl) {
