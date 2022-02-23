@@ -43,3 +43,11 @@
         }
     }
 }
+
+.hf-message-success {
+    padding-top: 2.5rem;
+    text-align: center;
+    @media screen and (min-width: $lg) {
+        text-align: left;;
+    }
+}
