@@ -285,20 +285,21 @@ textarea {
 }
 input, textarea {
     resize: vertical;
-    outline: .1rem solid $grey !important;
-    border: .1rem solid $grey !important;
+    outline: none !important;
+    border: .2rem solid $grey !important;
     transition: outline 150ms ease, border 150ms ease;
 }
 input:focus, textarea:focus, select:focus {
-    border: .1rem solid $pink !important;
-    outline: .1rem solid $pink !important;
+    border: .2rem solid $pink !important;
+    outline: none !important;
 }
 label {
     margin-bottom: .5rem;
 }
 .hf-form input:not(.rev-button), .hf-form textarea {
     border-radius: $rev-radius;
-    border: .2rem solid $grey;
+    border: .2rem solid $grey !important;
+    outline: none !important;
     padding: 1.5rem 2rem;
     margin-top: 1rem;
     width: 100%;
@@ -378,4 +379,26 @@ select {
     position: absolute;
     z-index: -1 !important;
     opacity: 75%;
+}
+
+/* 404 Error Page */
+
+.error-404 {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $md) {
+        flex-direction: column;
+    }
+}
+
+.mac-img {
+    background-image: url(assets/imgs/404-Face.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50rem;
+    width: 100%;
+    @media screen and (max-width: $md) {
+        min-height: 30rem;
+    }
 }

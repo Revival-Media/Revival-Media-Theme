@@ -19,7 +19,7 @@
                 'exclude'           => 1
             ) ) ) : 
                 // if categories exist, display the dropdown
-                echo '<select name="categoryfilter" class="work-category-dropdown"><option value="">All Projects</option>';
+                echo '<select id="categoryFilter" name="categoryfilter" class="work-category-dropdown"><option value="">All Projects</option>';
                 foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as an option value
                 endforeach;
@@ -30,9 +30,6 @@
         <input type="hidden" name="action" value="myfilter">
     </form>
     <script> // Script that sends AJAX request and receives response
-        jQuery('.work-category-dropdown').on('change', function() {
-            $(this).closest('form').submit();
-        });
         $(function($){
             $('#filter').submit(function(){
                 var filter = $('#filter');
@@ -48,12 +45,37 @@
             });
         });
     </script>
+        <script> // Check vehicle type based on url
+        $( document ).ready(function() {
+            if (window.location.href.indexOf('?web-development') > 0) {
+                $("#categoryFilter").val('8');
+                $("#categoryFilter").closest('form').submit();
+            };
+            if (window.location.href.indexOf('?social-media') > 0) {
+                $("#categoryFilter").val('9');
+                $("#categoryFilter").closest('form').submit();
+            };
+            if (window.location.href.indexOf('?copywriting') > 0) {
+                $("#categoryFilter").val('15');
+            };
+            if (window.location.href.indexOf('?brand-building') > 0) {
+                $("#categoryFilter").val('12');
+            };
+            if (window.location.href.indexOf('?design') > 0) {
+                $("#categoryFilter").val('10');
+            };
+            jQuery('.work-category-dropdown').on('change', function() {
+            $(this).closest('form').submit();
+        });
+        });
+    </script>
 </section>
 <section id="response" class="work-grid-section site-width" style="z-index: 1; position: relative;">
     <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-3.svg'; ?>" style="height: 35rem; left: -7%; top: 3%; transform: rotate(345deg);">
     <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -4%; top: 35%;">
     <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/blob-2.svg'; ?>" style="height: 38rem; right: -14%; top: 52%; transform: rotate(352deg);">
-    <?php 
+
+    <?php
         // Define Query Parameters
         $workArgs = array (
             'post_type' => 'projects',

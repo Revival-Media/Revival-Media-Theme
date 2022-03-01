@@ -86,7 +86,7 @@
         <h2 style="max-width: 44ch;">
             Our integrated <span class="grad-text">web, social, print and digital</span> services make brands work for business. 
         </h2>
-        <a class="rev-button">Learn More</a>
+        <a class="rev-button" href="/services">Learn More</a>
         <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/large-grid.svg'; ?>" style="height: 35rem; right: -8%; bottom: -71%;">
     </div>
     <div class="services-card">
@@ -144,11 +144,9 @@
 </section>
 <section class="site-width card-text-section">
     <div class="image-text-wrap">
-        <div class="rev-card rev-padding hp-img-1" style="position: relative;">
-            <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -10%; top: -14.5%;">
-        </div>
+        <div class="rev-card rev-padding hp-img-3"></div>
         <div class="card-image-wrap">
-            <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development</span>.</h3>
+            <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands</span>.</h3>
             <a href="/work" class="rev-button">View Projects</a>
         </div>
     </div>
@@ -162,12 +160,15 @@
         </div>
     </div>
     <div class="image-text-wrap">
-        <div class="rev-card rev-padding hp-img-3"></div>
+        <div class="rev-card rev-padding hp-img-1" style="position: relative;">
+            <img loading="lazy" class="rev-decore" alt="" src="<?php echo get_template_directory_uri() . '/assets/imgs/small-grid.svg'; ?>" style="height: 18rem; left: -10%; top: -14.5%;">
+        </div>
         <div class="card-image-wrap">
-            <h3>Straight-talking social media marketing <span class="grad-text">for ambitious brands</span>.</h3>
+            <h3>Bespoke customer journeys with expert <span class="grad-text">Shopify design and development</span>.</h3>
             <a href="/work" class="rev-button">View Projects</a>
         </div>
     </div>
+    
 </section>
 
 <div class="site-width" style="padding-bottom: 5rem;">
@@ -197,8 +198,10 @@
                     $testimonial = get_post_meta(get_the_ID(), 'Testimonial', true);
                     //Get Client Name and Job Title
                     $namePosition = get_post_meta(get_the_ID(), 'Name and Position', true);
-                        
-                    // Display the Project Title and Client with Hyperlink
+                    //Get Company Site
+                    $companySite = get_post_meta(get_the_ID(), 'Company Site', true);
+                    //Get Project Link
+                    $projectLink = get_post_meta(get_the_ID(), 'Project Link', true);
                 ?>
                 <li class="glide__slide client-card">
                         <div class="clients-text rev-card rev-padding">
@@ -207,8 +210,8 @@
                             <p><?php echo $testimonial; ?></p>
                             <p style="font-weight: bold;"><?php echo $namePosition; ?></p>
                             <div class="">
-                                <a href="">View Project</a>
-                                <a href="">Company Website</a>
+                                <a href="<?php echo $projectLink; ?>">View Project</a>
+                                <a href="<?php echo $companySite; ?>" target="_blank">Company Website</a>
                             </div>
                         </div>
                         <div class="client-img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>

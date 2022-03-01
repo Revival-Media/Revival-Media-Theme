@@ -18,7 +18,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/web-dev-icon.svg'; ?>" alt="Development">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Web design and development</h3>
             </div>
-            <p>We build first class Wordpress and Shopify sites for a wide range of clients and industries. <a href="/work">View projects.</a></p>
+            <p>We build first class Wordpress and Shopify sites for a wide range of clients and industries. <a href="/work?web-development">View web development projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Wordpress development</span></li>
@@ -38,7 +38,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/social-icon.svg'; ?>" alt="Social">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Social media marketing</h3>
             </div>
-            <p>Cut to the chase with our social media services, connecting consumers to the heart of your brand. <a href="/work">View projects.</a></p>
+            <p>Cut to the chase with our social media services, connecting consumers to the heart of your brand. <a href="/work?social-media">View social media projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Engaging feed content</span></li>
@@ -58,7 +58,7 @@
                 <img loading="lazy" style="transform: scale(0.7);" src="<?php echo get_template_directory_uri() . '/assets/imgs/print-icon.svg'; ?>" alt="Print">
                 <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Print and digital design</h3>
             </div>
-            <p>Good design is our foundation, be it digital or print. <a href="/work">View projects.</a></p>
+            <p>Good design is our foundation, be it digital or print. <a href="/work?design">View print design projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Brochures, posters and flyers</span></li>
@@ -78,7 +78,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/brand-build-icon.svg'; ?>" alt="Brand">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Brand building</h3>
             </div>
-            <p>We know a business's identity starts with their brand. <a href="/work">View projects.</a></p>
+            <p>We know a business's identity starts with their brand. <a href="/work?brand-building">View brand projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Powerful brand systems</span></li>
@@ -98,7 +98,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/copywriting-icon.svg'; ?>" alt="Copywriting">
                 <h3 style="margin-right: auto; margin-left: 2rem;">Brand voice and copywriting</h3>
             </div>
-            <p>Establishing a unique voice in your industry is challenging, let us help. <a href="/work">View projects.</a></p>
+            <p>Establishing a unique voice in your industry is challenging, let us help. <a href="/work?copywriting">View copywriting projects.</a></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Brand voice and copywriting</span></li>
@@ -106,7 +106,6 @@
                 </div>
                 <div>
                     <li class="rev-bullet"><span>Proof reading and editing</span></li>
-                    <li class="rev-bullet"><span>***We need another one here***</span></li>
                 </div>
             </ul>
         </div>
@@ -118,7 +117,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/security-icon.svg'; ?>" alt="Security">
                 <h3 class="h3-line-end" style="margin-right: auto; margin-left: 2rem;">Maintenance and security</h3>
             </div>
-            <p>A website is never finished, only improved. <a href="/work">View projects.</a></p>
+            <p>A website is never finished, only improved. <!--<a href="/work">View projects.</a>--></p>
             <ul style="margin-left: .7rem; line-height: 2.5rem; display: flex; flex-wrap: wrap;">
                 <div style="margin-right: 2.5rem">
                     <li class="rev-bullet"><span>Complete site and database backups</span></li>
