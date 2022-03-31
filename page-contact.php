@@ -28,7 +28,7 @@
                 <div class="contact-info-wrap">
                     <div>
                         <h4>Call us</h4>
-                        <a href="tel:+44-(0)-1332-825-500">+44 (0) 1332 825 500</a>
+                        <a href="tel:+44-(0)-1332-410-710">+44 (0) 1332 410 710</a>
                     </div>
                     <div>
                         <h4>Email us</h4>

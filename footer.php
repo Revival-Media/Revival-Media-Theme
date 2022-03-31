@@ -32,10 +32,10 @@
 							?>
 						</div>
 						<div class="footer-col-two">
-							<a href="tel:+44-(0)-116-270-2377" target="_blank">
+							<a href="tel:+44-(0)-1332-410-710" target="_blank">
 								<div class="contact-detail">
 									<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/imgs/phone.svg'; ?>" alt="Facebook">
-									<p>+44 (0) 116 270 2377</p>
+									<p>+44 (0) 1332 410 710</p>
 								</div>
 							</a>
 							<a href="mailto:hello@media.revival.solutions" target="_blank">
