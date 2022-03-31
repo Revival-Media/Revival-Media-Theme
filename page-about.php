@@ -102,9 +102,7 @@
             Boost your sales with <span>Revival Connect</span>
         </h2>
         <p>
-            Revival Solutions specialise in helping small to medium-sized 
-            companies with financial restructuring and support, and has 
-            extensive experience across a diverse range of sectors.
+            Does your business struggle with limited sales resources? Choose Revival Connect as an extension of your sales team to a build stable pipeline of quality leads and sales appointments.
         </p>
         <a href="https://revivalconnect.co.uk" class="rev-button">Discover More</a>
     </div>
