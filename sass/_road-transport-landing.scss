@@ -1,0 +1,39 @@
+.road-transport-hero-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 2rem;
+    @media screen and (max-width: $md) {
+        grid-template-columns: 1fr;
+    }
+    .road-transport-bullets li {
+        list-style-type: circle;
+        list-style-position: inside;
+        line-height: 3.1rem;
+    }
+    p {
+        max-width: 52ch;
+    }
+    .form-card {
+        margin-top: 14rem;
+        @media screen and (max-width: $md) {
+            margin-top: 0;
+        }
+        .bhf-truck-cutout {
+            margin-top: -24rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            @media screen and (max-width: $md) {
+                display: none;
+            }
+        }
+        h3 {
+            margin-bottom: 2rem;
+        }
+    }
+}
+section.road-transport-slide-title-wrap {
+    .road-transport-slide-title {
+        max-width: 23ch;
+    }
+}
